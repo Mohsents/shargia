@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: gradle-installation-beacon-7.0.2">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/wrapper/dists/gradle-7.0.2-all/7era6s5ay7zsbhuvl0oc9g94s/gradle-7.0.2/lib/gradle-installation-beacon-7.0.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$USER_HOME$/.gradle/wrapper/dists/gradle-7.0.2-all/7era6s5ay7zsbhuvl0oc9g94s/gradle-7.0.2/src/installation-beacon" />
+    </SOURCES>
+  </library>
+</component>

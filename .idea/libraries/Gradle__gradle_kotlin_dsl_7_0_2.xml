@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: gradle-kotlin-dsl-7.0.2">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/wrapper/dists/gradle-7.0.2-all/7era6s5ay7zsbhuvl0oc9g94s/gradle-7.0.2/lib/gradle-kotlin-dsl-7.0.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$USER_HOME$/.gradle/wrapper/dists/gradle-7.0.2-all/7era6s5ay7zsbhuvl0oc9g94s/gradle-7.0.2/src/kotlin-dsl" />
+    </SOURCES>
+  </library>
+</component>
