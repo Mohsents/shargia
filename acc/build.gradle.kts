@@ -30,6 +30,7 @@ android {
     buildTypes {
         release {
             isMinifyEnabled = true
+            isShrinkResources = true
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
@@ -44,7 +45,4 @@ android {
     kotlinOptions { jvmTarget = "1.8" }
 }
 
-dependencies {
-    implementation(Dependencies.Libs.LIBSU)
-    implementation(Dependencies.Libs.COROUTINE_CORE)
-}
+dependencies {}

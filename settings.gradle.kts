@@ -15,4 +15,4 @@
  */
 
 rootProject.name = "Shargia"
-include(":app", ":shell")
+include(":app", ":shell", ":acc")
