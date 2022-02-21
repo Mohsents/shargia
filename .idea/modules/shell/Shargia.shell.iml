@@ -15,7 +15,7 @@
         </compilerSettings>
         <compilerArguments>
           <option name="destination" value="$MODULE_DIR$/../../../shell/build/tmp/kotlin-classes/debug" />
-          <option name="classpath" value="$USER_HOME$/.gradle/caches/transforms-3/704851793c2f5bb834fbbf176e1e92d9/transformed/jetified-kotlin-stdlib-jdk8-1.5.31.jar:/home/mohsen/.gradle/caches/transforms-3/83e01fe05df2d60d451c9699e3e98089/transformed/jetified-kotlin-stdlib-jdk7-1.5.31.jar:/home/mohsen/.gradle/caches/transforms-3/c266445dda78a6a20fdbcb06bb2b0d9b/transformed/jetified-kotlin-stdlib-1.5.31.jar:/home/mohsen/.gradle/caches/transforms-3/c3f2eb8e4ddeb660ff8b5be633fb646c/transformed/jetified-annotations-13.0.jar:/home/mohsen/.gradle/caches/transforms-3/e119bd24c84cff9a76ed58d35b0f7258/transformed/jetified-kotlin-stdlib-common-1.5.31.jar:/home/mohsen/.gradle/caches/transforms-3/29f141eb358eb06b72da3c94c47d5aa5/transformed/jetified-core-3.2.1-api.jar:/home/mohsen/.gradle/caches/modules-2/files-2.1/androidx.annotation/annotation/1.3.0/21f49f5f9b85fc49de712539f79123119740595/annotation-1.3.0.jar:/home/mohsen/Android/Sdk/platforms/android-32/android.jar:/home/mohsen/Android/Sdk/build-tools/30.0.2/core-lambda-stubs.jar" />
+          <option name="classpath" value="$MODULE_DIR$/../../../shell/build/intermediates/compile_r_class_jar/debug/R.jar:/home/mohsen/.gradle/caches/transforms-3/50a31b0b40efe4eccbb8180950daaf3c/transformed/jetified-kotlinx-coroutines-core-jvm-1.5.0.jar:/home/mohsen/.gradle/caches/transforms-3/492ccb79705834c34db6a4e0b0b33ba2/transformed/jetified-kotlin-stdlib-jdk8-1.5.31.jar:/home/mohsen/.gradle/caches/transforms-3/a078ad379a0c8bc0e9fa31914565d2d0/transformed/jetified-kotlin-stdlib-jdk7-1.5.31.jar:/home/mohsen/.gradle/caches/transforms-3/93002d55251d4bacd16cd466d15dc473/transformed/jetified-kotlin-stdlib-1.5.31.jar:/home/mohsen/.gradle/caches/transforms-3/a93e333128fb3c6cf2011589989949e2/transformed/jetified-annotations-13.0.jar:/home/mohsen/.gradle/caches/transforms-3/9a98d0183a7ddb79ee785779ef008ff3/transformed/jetified-kotlin-stdlib-common-1.5.31.jar:/home/mohsen/.gradle/caches/transforms-3/6eacbb7ba18cb4de391975b31917cf98/transformed/jetified-core-3.2.1-api.jar:/home/mohsen/.gradle/caches/modules-2/files-2.1/androidx.annotation/annotation/1.3.0/21f49f5f9b85fc49de712539f79123119740595/annotation-1.3.0.jar:/home/mohsen/Android/Sdk/platforms/android-32/android.jar:/home/mohsen/Android/Sdk/build-tools/30.0.2/core-lambda-stubs.jar" />
           <option name="noStdlib" value="true" />
           <option name="noReflect" value="true" />
           <option name="moduleName" value="shell_debug" />
@@ -59,11 +59,15 @@
       <sourceFolder url="file://$MODULE_DIR$/../../../shell/src/androidTest/java" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/../../../shell/src/main/java" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/../../../shell/src/test/java" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../shell/build/generated/ap_generated_sources/debug/out" isTestSource="false" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../shell/build/generated/res/resValues/debug" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../shell/build/generated/source/buildConfig/debug" isTestSource="false" generated="true" />
       <excludeFolder url="file://$MODULE_DIR$/../../../shell/.gradle" />
       <excludeFolder url="file://$MODULE_DIR$/../../../shell/build" />
     </content>
     <orderEntry type="jdk" jdkName="Android API 32 Platform" jdkType="Android SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm:1.5.0" level="project" />
     <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.5.31" level="project" />
     <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.5.31" level="project" />
     <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib:1.5.31" level="project" />

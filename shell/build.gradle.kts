@@ -30,4 +30,5 @@ android {
 
 dependencies {
     implementation(Dependencies.Libs.LIBSU)
+    implementation(Dependencies.Libs.COROUTINE_CORE)
 }
