@@ -15,7 +15,7 @@
         </compilerSettings>
         <compilerArguments>
           <option name="destination" value="$MODULE_DIR$/../../../acc/build/tmp/kotlin-classes/debug" />
-          <option name="classpath" value="$USER_HOME$/.gradle/caches/transforms-3/9823ff0528b06542073f5eaf64312593/transformed/jetified-kotlin-stdlib-jdk8-1.5.31.jar:/home/mohsen/.gradle/caches/transforms-3/27b5d381523c3f11948cedf48c005b9c/transformed/jetified-kotlin-stdlib-jdk7-1.5.31.jar:/home/mohsen/.gradle/caches/transforms-3/47edfec6f39c07585b7a6caea5c7f3f4/transformed/jetified-kotlin-stdlib-1.5.31.jar:/home/mohsen/.gradle/caches/transforms-3/71741b8012d839c96f13ff8d1a88a7f2/transformed/jetified-annotations-13.0.jar:/home/mohsen/.gradle/caches/transforms-3/808baf32ca20d356022a5a1d44c86e47/transformed/jetified-kotlin-stdlib-common-1.5.31.jar:/home/mohsen/Android/Sdk/platforms/android-32/android.jar:/home/mohsen/Android/Sdk/build-tools/30.0.2/core-lambda-stubs.jar" />
+          <option name="classpath" value="$MODULE_DIR$/../../../acc/build/intermediates/compile_r_class_jar/debug/R.jar:/home/mohsen/.gradle/caches/transforms-3/9823ff0528b06542073f5eaf64312593/transformed/jetified-kotlin-stdlib-jdk8-1.5.31.jar:/home/mohsen/.gradle/caches/transforms-3/27b5d381523c3f11948cedf48c005b9c/transformed/jetified-kotlin-stdlib-jdk7-1.5.31.jar:/home/mohsen/.gradle/caches/transforms-3/47edfec6f39c07585b7a6caea5c7f3f4/transformed/jetified-kotlin-stdlib-1.5.31.jar:/home/mohsen/.gradle/caches/transforms-3/71741b8012d839c96f13ff8d1a88a7f2/transformed/jetified-annotations-13.0.jar:/home/mohsen/.gradle/caches/transforms-3/808baf32ca20d356022a5a1d44c86e47/transformed/jetified-kotlin-stdlib-common-1.5.31.jar:/home/mohsen/Android/Sdk/platforms/android-32/android.jar:/home/mohsen/Android/Sdk/build-tools/30.0.2/core-lambda-stubs.jar" />
           <option name="noStdlib" value="true" />
           <option name="noReflect" value="true" />
           <option name="moduleName" value="acc_debug" />
@@ -59,6 +59,10 @@
       <sourceFolder url="file://$MODULE_DIR$/../../../acc/src/androidTest/java" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/../../../acc/src/main/java" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/../../../acc/src/test/java" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../acc/build/generated/ap_generated_sources/debug/out" isTestSource="false" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../acc/build/generated/res/resValues/debug" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../acc/build/generated/source/buildConfig/debug" isTestSource="false" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../acc/src/main/res" type="java-resource" />
       <excludeFolder url="file://$MODULE_DIR$/../../../acc/.gradle" />
       <excludeFolder url="file://$MODULE_DIR$/../../../acc/build" />
     </content>
