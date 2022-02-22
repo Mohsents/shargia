@@ -25,18 +25,28 @@ android {
     defaultConfig {
         minSdk = AppConfig.MIN_SDK_VERSION
         targetSdk = AppConfig.TARGET_SDK_VERSION
+        buildConfigField(
+            "String",
+            "ACC_VERSION_NAME",
+            project.property("ACC_VERSION_NAME") as String
+        )
+        buildConfigField(
+            "String",
+            "ACC_VERSION_CODE",
+            project.property("ACC_VERSION_CODE") as String
+        )
     }
 
     buildTypes {
         release {
             isMinifyEnabled = true
-            isShrinkResources = true
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
             )
         }
     }
+
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_1_8
         targetCompatibility = JavaVersion.VERSION_1_8
