@@ -22,6 +22,7 @@ object Dependencies {
     object Plugins {
         const val AGP = "com.android.tools.build:gradle:${Versions.AGP}"
         const val KOTLIN = "org.jetbrains.kotlin:kotlin-gradle-plugin:${Versions.KOTLIN}"
+        const val HILT = "com.google.dagger:hilt-android-gradle-plugin:${Versions.HILT}"
     }
 
     object Libs {
@@ -30,5 +31,7 @@ object Dependencies {
         const val COROUTINE_CORE =
             "org.jetbrains.kotlinx:kotlinx-coroutines-core:${Versions.COROUTINE}"
         const val ANNOTATION = "androidx.annotation:annotation:${Versions.ANNOTATION}"
+        const val HILT = "com.google.dagger:hilt-android:${Versions.HILT}"
+        const val HILT_ANDROID_COMPILER = "com.google.dagger:hilt-android-compiler:${Versions.HILT}"
     }
 }

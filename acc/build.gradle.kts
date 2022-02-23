@@ -58,4 +58,5 @@ android {
 dependencies {
     implementation(Dependencies.Libs.ANNOTATION)
     implementation(Dependencies.Libs.COROUTINE_CORE)
+    implementation(Dependencies.Libs.HILT)
 }

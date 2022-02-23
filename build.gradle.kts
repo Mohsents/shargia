@@ -23,6 +23,7 @@ buildscript {
     dependencies {
         classpath(Dependencies.Plugins.AGP)
         classpath(Dependencies.Plugins.KOTLIN)
+        classpath(Dependencies.Plugins.HILT)
     }
 }
 

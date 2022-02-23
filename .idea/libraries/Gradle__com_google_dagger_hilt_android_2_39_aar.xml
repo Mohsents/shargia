@@ -1,0 +1,16 @@
+<component name="libraryTable">
+  <library name="Gradle: com.google.dagger:hilt-android:2.39@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/d5894927839a176a5ce942bc19ef2417/transformed/jetified-hilt-android-2.39/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/20bbbbbe6983766d2959a94473562a9f/transformed/jetified-hilt-android-2.39/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/20bbbbbe6983766d2959a94473562a9f/transformed/jetified-hilt-android-2.39/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/20bbbbbe6983766d2959a94473562a9f/transformed/jetified-hilt-android-2.39/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.dagger/hilt-android/2.39/e813c142a9913d5464fd1a5f38c34427231a0e82/hilt-android-2.39-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.dagger/hilt-android/2.39/edf1274f128470ec13459856872309ad8d428a27/hilt-android-2.39-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

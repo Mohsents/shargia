@@ -28,4 +28,5 @@ internal object Versions {
     const val LIBSU = "3.2.1"
     const val COROUTINE = "1.5.0"
     const val ANNOTATION = "1.3.0"
+    const val HILT = "2.39"
 }
