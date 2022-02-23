@@ -45,4 +45,7 @@ android {
     kotlinOptions { jvmTarget = "1.8" }
 }
 
-dependencies {}
+dependencies {
+    implementation(Dependencies.Libs.COROUTINE_CORE)
+    implementation(Dependencies.Libs.HILT)
+}

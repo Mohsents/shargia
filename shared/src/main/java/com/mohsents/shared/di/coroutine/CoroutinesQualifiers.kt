@@ -14,20 +14,22 @@
  * limitations under the License.
  */
 
-package com.mohsents.shared
+package com.mohsents.shared.di.coroutine
 
-import org.junit.Test
+import javax.inject.Qualifier
 
-import org.junit.Assert.*
+@Retention(AnnotationRetention.RUNTIME)
+@Qualifier
+annotation class DefaultDispatcher
 
-/**
- * Example local unit test, which will execute on the development machine (host).
- *
- * See [testing documentation](http://d.android.com/tools/testing).
- */
-class ExampleUnitTest {
-    @Test
-    fun addition_isCorrect() {
-        assertEquals(4, 2 + 2)
-    }
-}
+@Retention(AnnotationRetention.RUNTIME)
+@Qualifier
+annotation class IoDispatcher
+
+@Retention(AnnotationRetention.RUNTIME)
+@Qualifier
+annotation class MainDispatcher
+
+@Retention(AnnotationRetention.BINARY)
+@Qualifier
+annotation class MainImmediateDispatcher
