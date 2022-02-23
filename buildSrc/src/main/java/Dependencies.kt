@@ -29,5 +29,6 @@ object Dependencies {
         const val LIBSU = "com.github.topjohnwu.libsu:core:${Versions.LIBSU}"
         const val COROUTINE_CORE =
             "org.jetbrains.kotlinx:kotlinx-coroutines-core:${Versions.COROUTINE}"
+        const val ANNOTATION = "androidx.annotation:annotation:${Versions.ANNOTATION}"
     }
 }

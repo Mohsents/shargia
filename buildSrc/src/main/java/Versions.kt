@@ -27,4 +27,5 @@ internal object Versions {
     const val MATERIAL = "1.4.0"
     const val LIBSU = "3.2.1"
     const val COROUTINE = "1.5.0"
+    const val ANNOTATION = "1.3.0"
 }

@@ -55,4 +55,7 @@ android {
     kotlinOptions { jvmTarget = "1.8" }
 }
 
-dependencies {}
+dependencies {
+    implementation(Dependencies.Libs.ANNOTATION)
+    implementation(Dependencies.Libs.COROUTINE_CORE)
+}
