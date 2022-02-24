@@ -28,7 +28,7 @@ object Commander {
      * @param commands array of commands to execute.
      * @return [Shell.Result]
      */
-    suspend fun execCommand(vararg commands: String): Shell.Result = withContext(Dispatchers.IO) {
+    suspend fun exec(vararg commands: String): Shell.Result = withContext(Dispatchers.IO) {
         Shell.sh(*commands).exec()
     }
 
@@ -39,7 +39,7 @@ object Commander {
      * @param commands array of commands to execute.
      * @return [Shell.Result]
      */
-    suspend fun execSuCommand(vararg commands: String): Shell.Result = withContext(Dispatchers.IO) {
+    suspend fun execSu(vararg commands: String): Shell.Result = withContext(Dispatchers.IO) {
         Shell.su(*commands).exec()
     }
 }
