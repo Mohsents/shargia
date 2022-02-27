@@ -45,6 +45,6 @@ android {
 }
 
 dependencies {
-    implementation(Dependencies.Libs.LIBSU)
+    api(Dependencies.Libs.LIBSU)
     implementation(Dependencies.Libs.COROUTINE_CORE)
 }
