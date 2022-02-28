@@ -17,6 +17,7 @@
 plugins {
     id("com.android.library")
     kotlin("android")
+    kotlin("kapt")
 }
 
 android {
@@ -46,6 +47,12 @@ android {
 }
 
 dependencies {
+    api(Dependencies.Libs.COROUTINES_TEST)
     implementation(Dependencies.Libs.COROUTINE_CORE)
+    implementation(Dependencies.Libs.JUNIT)
     implementation(Dependencies.Libs.HILT)
+    implementation(Dependencies.Libs.ANDROIDX_TEST_RUNNER)
+    implementation(Dependencies.Libs.HILT_ANDROID_TESTING)
+    implementation(Dependencies.Libs.ANDROIDX_JUNIT)
+    kapt(Dependencies.Libs.HILT_ANDROID_COMPILER)
 }
