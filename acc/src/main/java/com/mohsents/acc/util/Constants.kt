@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.mohsents.acc
+package com.mohsents.acc.util
 
 const val ACC_PATH = "/dev/.vr25/acc"
-const val ACCA = "/dev/.vr25/acc/acca"
+const val ACCA = "$ACC_PATH/acca"

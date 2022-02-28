@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.mohsents.acc
+package com.mohsents.acc.util
 
 import android.content.Context
 import androidx.annotation.RawRes

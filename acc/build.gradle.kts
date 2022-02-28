@@ -82,4 +82,11 @@ dependencies {
     api(Dependencies.Libs.COROUTINE_CORE)
     implementation(Dependencies.Libs.ANNOTATION)
     implementation(Dependencies.Libs.HILT)
+    androidTestImplementation(Dependencies.Libs.JUNIT)
+    androidTestImplementation(Dependencies.Libs.HILT_ANDROID_TESTING)
+    androidTestImplementation(Dependencies.Libs.ANDROIDX_JUNIT)
+    androidTestImplementation(Dependencies.Libs.ANDROIDX_TEST_RUNNER)
+    androidTestImplementation(Dependencies.Libs.ANDROIDX_RULES)
+    kapt(Dependencies.Libs.HILT_ANDROID_COMPILER)
+    kaptAndroidTest(Dependencies.Libs.HILT_ANDROID_COMPILER)
 }
