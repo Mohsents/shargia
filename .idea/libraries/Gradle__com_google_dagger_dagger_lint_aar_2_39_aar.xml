@@ -1,11 +1,14 @@
 <component name="libraryTable">
   <library name="Gradle: com.google.dagger:dagger-lint-aar:2.39@aar">
     <CLASSES>
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/9a3cd4d99779c147fbeea1e22c4d1a4c/transformed/jetified-dagger-lint-aar-2.39/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/f5d295e47c0e1131a798b22c77510fc0/transformed/jetified-dagger-lint-aar-2.39/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/f26b37f02b1d6402f3ea1c45afa865e7/transformed/jetified-dagger-lint-aar-2.39/res" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/f5d295e47c0e1131a798b22c77510fc0/transformed/jetified-dagger-lint-aar-2.39/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/f5d295e47c0e1131a798b22c77510fc0/transformed/jetified-dagger-lint-aar-2.39/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/eca5088d9e8471c5560f614ac209ef43/transformed/jetified-dagger-lint-aar-2.39/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/127e37cbc31fc9a28e7001089e7209d2/transformed/jetified-dagger-lint-aar-2.39/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/079690d16f1cf0a11f6458ec105b5b05/transformed/jetified-dagger-lint-aar-2.39/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/6558df2708a271a89c4724507e47271c/transformed/jetified-dagger-lint-aar-2.39/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/345ec19cfe74bc483f4211d42eec3205/transformed/jetified-dagger-lint-aar-2.39/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/0c186be3d43212bc6b0ccc68f60cb3f1/transformed/jetified-dagger-lint-aar-2.39/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/345ec19cfe74bc483f4211d42eec3205/transformed/jetified-dagger-lint-aar-2.39/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/345ec19cfe74bc483f4211d42eec3205/transformed/jetified-dagger-lint-aar-2.39/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

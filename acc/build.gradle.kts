@@ -17,6 +17,7 @@
 plugins {
     id("com.android.library")
     kotlin("android")
+    kotlin("kapt")
 }
 
 android {
@@ -25,6 +26,7 @@ android {
     defaultConfig {
         minSdk = AppConfig.MIN_SDK_VERSION
         targetSdk = AppConfig.TARGET_SDK_VERSION
+        testInstrumentationRunner =  "com.mohsents.shared.test.HiltTestRunner"
         buildConfigField(
             "String",
             "ACC_VERSION_NAME",
@@ -34,6 +36,16 @@ android {
             "String",
             "ACC_VERSION_CODE",
             project.property("ACC_VERSION_CODE") as String
+        )
+        buildConfigField(
+            "String",
+            "ACC_FILE",
+            project.property("ACC_FILE") as String
+        )
+        buildConfigField(
+            "String",
+            "ACC_INSTALL_SCRIPT",
+            project.property("ACC_INSTALL_SCRIPT") as String
         )
     }
 
@@ -53,10 +65,21 @@ android {
     }
 
     kotlinOptions { jvmTarget = "1.8" }
+
+    packagingOptions {
+        resources.excludes.apply {
+            add("META-INF/LICENSE")
+            add("META-INF/*.properties")
+            add("META-INF/AL2.0")
+            add("META-INF/LGPL2.1")
+        }
+    }
 }
 
 dependencies {
+    implementation(project(":shell"))
+    api(project(":shared"))
+    api(Dependencies.Libs.COROUTINE_CORE)
     implementation(Dependencies.Libs.ANNOTATION)
-    implementation(Dependencies.Libs.COROUTINE_CORE)
     implementation(Dependencies.Libs.HILT)
 }
