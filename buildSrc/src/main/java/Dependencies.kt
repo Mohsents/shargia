@@ -30,8 +30,15 @@ object Dependencies {
         const val LIBSU = "com.github.topjohnwu.libsu:core:${Versions.LIBSU}"
         const val COROUTINE_CORE =
             "org.jetbrains.kotlinx:kotlinx-coroutines-core:${Versions.COROUTINE}"
+        const val COROUTINES_TEST =
+            "org.jetbrains.kotlinx:kotlinx-coroutines-test:${Versions.COROUTINE}"
         const val ANNOTATION = "androidx.annotation:annotation:${Versions.ANNOTATION}"
         const val HILT = "com.google.dagger:hilt-android:${Versions.HILT}"
         const val HILT_ANDROID_COMPILER = "com.google.dagger:hilt-android-compiler:${Versions.HILT}"
+        const val HILT_ANDROID_TESTING = "com.google.dagger:hilt-android-testing:${Versions.HILT}"
+        const val JUNIT = "junit:junit:${Versions.JUNIT}"
+        const val ANDROIDX_JUNIT = "androidx.test.ext:junit-ktx:${Versions.ANDROIDX_JUNIT}"
+        const val ANDROIDX_TEST_RUNNER = "androidx.test:runner:${Versions.ANDROIDX_TEST}"
+        const val ANDROIDX_RULES = "androidx.test:rules:${Versions.ANDROIDX_TEST}"
     }
 }

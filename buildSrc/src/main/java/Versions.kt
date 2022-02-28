@@ -26,7 +26,10 @@ internal object Versions {
     // Libs
     const val MATERIAL = "1.4.0"
     const val LIBSU = "3.2.1"
-    const val COROUTINE = "1.5.0"
+    const val COROUTINE = "1.6.0"
     const val ANNOTATION = "1.3.0"
     const val HILT = "2.39"
+    const val JUNIT = "4.13.2"
+    const val ANDROIDX_JUNIT = "1.1.3"
+    const val ANDROIDX_TEST = "1.4.0"
 }
