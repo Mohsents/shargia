@@ -47,4 +47,7 @@ android {
 dependencies {
     api(Dependencies.Libs.LIBSU)
     implementation(Dependencies.Libs.COROUTINE_CORE)
+    compileOnly(Dependencies.Libs.JUNIT)
+    androidTestImplementation(Dependencies.Libs.COROUTINES_TEST)
+    androidTestImplementation(Dependencies.Libs.ANDROIDX_TEST_RUNNER)
 }

@@ -14,22 +14,8 @@
  * limitations under the License.
  */
 
-package com.mohsents.shared.di.coroutine
+package com.mohsents.shell.testcommon
 
-import javax.inject.Qualifier
-
-@Retention(AnnotationRetention.RUNTIME)
-@Qualifier
-annotation class DefaultDispatcher
-
-@Retention(AnnotationRetention.RUNTIME)
-@Qualifier
-annotation class IoDispatcher
-
-@Retention(AnnotationRetention.RUNTIME)
-@Qualifier
-annotation class MainDispatcher
-
-@Retention(AnnotationRetention.BINARY)
-@Qualifier
-annotation class MainImmediateDispatcher
+class NoRootException (
+    override val message: String = "No root permission found."
+) : Exception()
