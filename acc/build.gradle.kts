@@ -26,7 +26,7 @@ android {
     defaultConfig {
         minSdk = AppConfig.MIN_SDK_VERSION
         targetSdk = AppConfig.TARGET_SDK_VERSION
-        testInstrumentationRunner =  "com.mohsents.shared.test.HiltTestRunner"
+        testInstrumentationRunner = "com.mohsents.shared.test.HiltTestRunner"
         buildConfigField(
             "String",
             "ACC_VERSION_NAME",
