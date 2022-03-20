@@ -48,6 +48,8 @@ android {
 
 dependencies {
     api(Dependencies.Libs.COROUTINES_TEST)
+    api(Dependencies.Libs.DATASTORE)
+    implementation(Dependencies.Libs.HILT)
     implementation(Dependencies.Libs.COROUTINE_CORE)
     implementation(Dependencies.Libs.JUNIT)
     implementation(Dependencies.Libs.HILT)

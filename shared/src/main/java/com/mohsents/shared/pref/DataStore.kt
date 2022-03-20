@@ -14,23 +14,15 @@
  * limitations under the License.
  */
 
+package com.mohsents.shared.pref
+
+import androidx.datastore.preferences.core.Preferences
+import kotlinx.coroutines.flow.Flow
+
 /**
- * Define dependencies version.
+ * Base contract for saving and getting values from DataStore.
  */
-internal object Versions {
-
-    // Plugins
-    const val AGP = "7.0.4"
-    const val KOTLIN = "1.5.31"
-
-    // Libs
-    const val MATERIAL = "1.4.0"
-    const val LIBSU = "3.2.1"
-    const val COROUTINE = "1.6.0"
-    const val DATASTORE = "1.0.0"
-    const val ANNOTATION = "1.3.0"
-    const val HILT = "2.39"
-    const val JUNIT = "4.13.2"
-    const val ANDROIDX_JUNIT = "1.1.3"
-    const val ANDROIDX_TEST = "1.4.0"
+interface DataStore {
+    suspend fun <K : Preferences.Key<V>, V> save(key: K, value: V): Result<Unit>
+    fun <K : Preferences.Key<V>, V> get(key: K, defaultValue: V): Result<Flow<V>>
 }

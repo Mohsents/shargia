@@ -32,6 +32,7 @@ object Dependencies {
             "org.jetbrains.kotlinx:kotlinx-coroutines-core:${Versions.COROUTINE}"
         const val COROUTINES_TEST =
             "org.jetbrains.kotlinx:kotlinx-coroutines-test:${Versions.COROUTINE}"
+        const val DATASTORE = "androidx.datastore:datastore-preferences:${Versions.DATASTORE}"
         const val ANNOTATION = "androidx.annotation:annotation:${Versions.ANNOTATION}"
         const val HILT = "com.google.dagger:hilt-android:${Versions.HILT}"
         const val HILT_ANDROID_COMPILER = "com.google.dagger:hilt-android-compiler:${Versions.HILT}"
