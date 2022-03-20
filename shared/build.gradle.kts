@@ -26,6 +26,7 @@ android {
     defaultConfig {
         minSdk = AppConfig.MIN_SDK_VERSION
         targetSdk = AppConfig.TARGET_SDK_VERSION
+        testInstrumentationRunner = "com.mohsents.shared.test.HiltTestRunner"
     }
 
     buildTypes {
@@ -51,10 +52,10 @@ dependencies {
     api(Dependencies.Libs.DATASTORE)
     implementation(Dependencies.Libs.HILT)
     implementation(Dependencies.Libs.COROUTINE_CORE)
-    implementation(Dependencies.Libs.JUNIT)
-    implementation(Dependencies.Libs.HILT)
-    implementation(Dependencies.Libs.ANDROIDX_TEST_RUNNER)
     implementation(Dependencies.Libs.HILT_ANDROID_TESTING)
+    implementation(Dependencies.Libs.JUNIT)
+    implementation(Dependencies.Libs.ANDROIDX_TEST_RUNNER)
     implementation(Dependencies.Libs.ANDROIDX_JUNIT)
+    kaptAndroidTest(Dependencies.Libs.HILT_ANDROID_COMPILER)
     kapt(Dependencies.Libs.HILT_ANDROID_COMPILER)
 }
