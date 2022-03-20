@@ -45,3 +45,25 @@ suspend fun copyRawFileTo(
     }
     return@withContext destFile
 }
+
+/**
+ * Finds an value with [pattern] for battery info.
+ *
+ * If found value is null, returns the [defaultValue].
+ * For example:
+ * If [pattern] is: ^\s*CAPACITY=(\d+)
+ * and [String] is: CAPACITY=28
+ * It's return: 28
+ *
+ * @param pattern pattern for finding value
+ * @param defaultValue if found value is null, return this
+ * @return first value that match with [pattern]
+ */
+fun String.findInfoWithPattern(
+    pattern: String,
+    defaultValue: String = DEFAULT_BATTERY_INFO_VALUE
+): String {
+    return pattern
+        .toRegex(RegexOption.MULTILINE)
+        .find(this)?.destructured?.component1() ?: defaultValue
+}
