@@ -65,6 +65,7 @@ android {
 }
 
 dependencies {
+    implementation(project(":acc"))
     implementation(Dependencies.Libs.MATERIAL)
     implementation(Dependencies.Libs.HILT)
     kapt(Dependencies.Libs.HILT_ANDROID_COMPILER)

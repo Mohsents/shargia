@@ -16,7 +16,6 @@
 
 package com.mohsents.acc
 
-import android.util.Log
 import com.mohsents.acc.model.BatteryInfo
 import com.mohsents.acc.util.*
 import com.mohsents.shared.di.coroutine.IoDispatcher
@@ -25,6 +24,7 @@ import com.mohsents.shell.command.Commander
 import com.mohsents.shell.command.toSortedString
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.withContext
+import timber.log.Timber
 import javax.inject.Inject
 import javax.inject.Singleton
 
@@ -75,7 +75,7 @@ class AccHandler @Inject constructor(
             append(ACCA)
             options.forEach { append(" --$it ") }
         }
-        Log.i(TAG, "exec(): $command")
+        Timber.i("Executed command: %s", command)
         val result = Commander.execSu(command)
         if (result.isSuccess) {
             return@withContext result.out.toSortedString()
@@ -156,8 +156,4 @@ class AccHandler @Inject constructor(
 
     override suspend fun limitChargingCurrent(): Result<Unit> =
         setChargingCurrent(millivolts = DEFAULT_VOLT, milliamps = DEFAULT_CURRENT)
-
-    private companion object {
-        const val TAG = "AccHandler"
-    }
 }
