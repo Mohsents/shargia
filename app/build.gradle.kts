@@ -22,12 +22,12 @@ plugins {
 }
 
 android {
-    compileSdk = AppConfig.COMPILE_SDK_VERSION
+    compileSdkPreview = AppConfig.COMPILE_SDK_VERSION
 
     defaultConfig {
         applicationId = AppConfig.APPLICATION_ID
         minSdk = AppConfig.MIN_SDK_VERSION
-        targetSdk = AppConfig.TARGET_SDK_VERSION
+        targetSdkPreview = AppConfig.TARGET_SDK_VERSION
         versionCode = AppConfig.VERSION_CODE
         versionName = AppConfig.VERSION_NAME
     }
