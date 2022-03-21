@@ -21,7 +21,7 @@ internal object Versions {
 
     // Plugins
     const val AGP = "7.3.0-alpha06"
-    const val KOTLIN = "1.5.31"
+    const val KOTLIN = "1.6.10"
 
     // Libs
     const val MATERIAL = "1.4.0"
