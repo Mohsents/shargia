@@ -34,6 +34,7 @@ object Dependencies {
             "org.jetbrains.kotlinx:kotlinx-coroutines-test:${Versions.COROUTINE}"
         const val DATASTORE = "androidx.datastore:datastore-preferences:${Versions.DATASTORE}"
         const val TIMBER = "com.jakewharton.timber:timber:${Versions.TIMBER}"
+        const val COMPOSE_UI = "androidx.compose.ui:ui:${Versions.COMPOSE}"
         const val ANNOTATION = "androidx.annotation:annotation:${Versions.ANNOTATION}"
         const val HILT = "com.google.dagger:hilt-android:${Versions.HILT}"
         const val HILT_ANDROID_COMPILER = "com.google.dagger:hilt-android-compiler:${Versions.HILT}"

@@ -25,6 +25,7 @@ android {
     defaultConfig {
         minSdk = AppConfig.MIN_SDK_VERSION
         targetSdkPreview = AppConfig.TARGET_SDK_VERSION
+        vectorDrawables { useSupportLibrary = true }
     }
 
     buildTypes {
@@ -43,6 +44,28 @@ android {
     }
 
     kotlinOptions { jvmTarget = "1.8" }
+
+    buildFeatures { compose = true }
+
+    composeOptions { kotlinCompilerExtensionVersion = "1.1.1" }
+
+    packagingOptions {
+        resources.excludes.apply {
+            add("META-INF/AL2.0")
+            add("META-INF/LGPL2.1")
+        }
+    }
 }
 
-dependencies {}
+dependencies {
+    implementation(Dependencies.Libs.APP_COMPAT)
+    implementation(Dependencies.Libs.MATERIAL)
+    implementation(Dependencies.Libs.CORE_KTX)
+    implementation(Dependencies.Libs.LIFECYCLE)
+    implementation(Dependencies.Libs.COMPOSE_UI)
+    implementation(Dependencies.Libs.COMPOSE_MATERIAL3)
+    implementation(Dependencies.Libs.COMPOSE_FOUNDATION)
+    implementation(Dependencies.Libs.COMPOSE_TOOLING_PREVIEW)
+    api(Dependencies.Libs.COMPOSE_ACTIVITY)
+    debugImplementation(Dependencies.Libs.COMPOSE_UI_TOOLING)
+}

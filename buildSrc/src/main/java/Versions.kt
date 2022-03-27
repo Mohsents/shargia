@@ -24,11 +24,13 @@ internal object Versions {
     const val KOTLIN = "1.6.10"
 
     // Libs
-    const val MATERIAL = "1.4.0"
+    const val APP_COMPAT = "1.4.0"
+    const val MATERIAL = "1.5.0"
     const val LIBSU = "3.2.1"
     const val COROUTINE = "1.6.0"
     const val DATASTORE = "1.0.0"
     const val TIMBER = "5.0.1"
+    const val COMPOSE_MATERIAL3 = "1.0.0-alpha08"
     const val ANNOTATION = "1.3.0"
     const val HILT = "2.41"
     const val JUNIT = "4.13.2"
