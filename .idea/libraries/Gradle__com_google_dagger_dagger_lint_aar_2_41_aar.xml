@@ -6,9 +6,14 @@
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/aedd9ce06ad4e2b6593b82ba14c28dd7/transformed/jetified-dagger-lint-aar-2.41/res" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/96f955200d16282428b425ec958020af/transformed/jetified-dagger-lint-aar-2.41/res" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/ab93259cc37ec6da3040cdbd5ef3c79d/transformed/jetified-dagger-lint-aar-2.41/res" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/507ccb20831b68758100371812331a2d/transformed/jetified-dagger-lint-aar-2.41/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/507ccb20831b68758100371812331a2d/transformed/jetified-dagger-lint-aar-2.41/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/507ccb20831b68758100371812331a2d/transformed/jetified-dagger-lint-aar-2.41/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/bc61a679f6e38e11931e76b8acbcd333/transformed/jetified-dagger-lint-aar-2.41/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/78981e714d96130d800c6bbcdb178686/transformed/jetified-dagger-lint-aar-2.41/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/01c9a26784358cd05fd4e7609ef88579/transformed/jetified-dagger-lint-aar-2.41/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/fb0bdb1106f0f9b0a073158596614ae4/transformed/jetified-dagger-lint-aar-2.41/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/7c948297af51baaff22e0f473aa8b655/transformed/jetified-dagger-lint-aar-2.41/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/7c948297af51baaff22e0f473aa8b655/transformed/jetified-dagger-lint-aar-2.41/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/7c948297af51baaff22e0f473aa8b655/transformed/jetified-dagger-lint-aar-2.41/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

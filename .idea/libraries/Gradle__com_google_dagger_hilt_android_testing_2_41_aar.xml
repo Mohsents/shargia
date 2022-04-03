@@ -7,8 +7,13 @@
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/e769f843708a3853d96ad9c1e7ad1b00/transformed/jetified-hilt-android-testing-2.41/res" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/acddb723b7d45f0d9e348ae4924dd29a/transformed/jetified-hilt-android-testing-2.41/res" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/81c4630880a10263a8725bad4f7e1a59/transformed/jetified-hilt-android-testing-2.41/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/81c4630880a10263a8725bad4f7e1a59/transformed/jetified-hilt-android-testing-2.41/AndroidManifest.xml" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/81c4630880a10263a8725bad4f7e1a59/transformed/jetified-hilt-android-testing-2.41/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/07947c1cdf549ebb3461cb7234fb9f50/transformed/jetified-hilt-android-testing-2.41/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/338998f10b11416ec29401e50806fa97/transformed/jetified-hilt-android-testing-2.41/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/cdadd140ea4a01384aa69016afe6635e/transformed/jetified-hilt-android-testing-2.41/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/bf5bcf299ba129a17c8e25fa8dcf8183/transformed/jetified-hilt-android-testing-2.41/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/6beaf3e014e509bc8c892879c0dd8e5c/transformed/jetified-hilt-android-testing-2.41/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/6beaf3e014e509bc8c892879c0dd8e5c/transformed/jetified-hilt-android-testing-2.41/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/6beaf3e014e509bc8c892879c0dd8e5c/transformed/jetified-hilt-android-testing-2.41/res" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.dagger/hilt-android-testing/2.41/849281b9a85b6a681525d91a62ac44f67c10c49d/hilt-android-testing-2.41-javadoc.jar!/" />

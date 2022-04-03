@@ -17,6 +17,7 @@
 plugins {
     id("com.android.library")
     kotlin("android")
+    kotlin("kapt")
 }
 
 android {
@@ -58,6 +59,8 @@ android {
 }
 
 dependencies {
+    implementation(project(":shell"))
+    implementation(project(":acc"))
     implementation(Dependencies.Libs.APP_COMPAT)
     implementation(Dependencies.Libs.MATERIAL)
     implementation(Dependencies.Libs.CORE_KTX)
@@ -67,5 +70,7 @@ dependencies {
     implementation(Dependencies.Libs.COMPOSE_FOUNDATION)
     implementation(Dependencies.Libs.COMPOSE_TOOLING_PREVIEW)
     api(Dependencies.Libs.COMPOSE_ACTIVITY)
+    implementation(Dependencies.Libs.HILT)
+    kapt(Dependencies.Libs.HILT_ANDROID_COMPILER)
     debugImplementation(Dependencies.Libs.COMPOSE_UI_TOOLING)
 }

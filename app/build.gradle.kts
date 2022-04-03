@@ -61,12 +61,14 @@ android {
 
     kotlinOptions { jvmTarget = "1.8" }
 
+    buildFeatures { compose = true }
+
     testOptions.unitTests.isIncludeAndroidResources = true
 }
 
 dependencies {
-    implementation(project(":acc"))
-    implementation(Dependencies.Libs.MATERIAL)
+    implementation(project(":shared"))
+    implementation(project(":ui"))
     implementation(Dependencies.Libs.HILT)
     kapt(Dependencies.Libs.HILT_ANDROID_COMPILER)
 }

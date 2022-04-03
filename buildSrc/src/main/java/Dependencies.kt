@@ -36,6 +36,21 @@ object Dependencies {
         const val TIMBER = "com.jakewharton.timber:timber:${Versions.TIMBER}"
         const val COMPOSE_UI = "androidx.compose.ui:ui:${Versions.COMPOSE}"
         const val ANNOTATION = "androidx.annotation:annotation:${Versions.ANNOTATION}"
+        const val CORE_KTX = "androidx.core:core-ktx:${Versions.CORE}"
+        const val APP_COMPAT = "androidx.appcompat:appcompat:${Versions.APP_COMPAT}"
+        const val LIFECYCLE = "androidx.lifecycle:lifecycle-runtime-ktx:${Versions.ARCH}"
+        const val COMPOSE_TOOLING_PREVIEW =
+            "androidx.compose.ui:ui-tooling-preview:${Versions.COMPOSE}"
+        const val COMPOSE_FOUNDATION = "androidx.compose.foundation:foundation:${Versions.COMPOSE}"
+        const val COMPOSE_MATERIAL3 = "androidx.compose.material3:material3:1.0.0-alpha08"
+        const val COMPOSE_MATERIAL_ICONS =
+            "androidx.compose.material:material-icons-core:${Versions.COMPOSE}"
+        const val COMPOSE_ACTIVITY =
+            "androidx.activity:activity-compose:${Versions.COMPOSE_ACTIVITY}"
+        const val COMPOSE_VIEWMODEL =
+            "androidx.lifecycle:lifecycle-viewmodel-compose:${Versions.ARCH}"
+
+        // Test
         const val HILT = "com.google.dagger:hilt-android:${Versions.HILT}"
         const val HILT_ANDROID_COMPILER = "com.google.dagger:hilt-android-compiler:${Versions.HILT}"
         const val HILT_ANDROID_TESTING = "com.google.dagger:hilt-android-testing:${Versions.HILT}"
@@ -43,5 +58,7 @@ object Dependencies {
         const val ANDROIDX_JUNIT = "androidx.test.ext:junit-ktx:${Versions.ANDROIDX_JUNIT}"
         const val ANDROIDX_TEST_RUNNER = "androidx.test:runner:${Versions.ANDROIDX_TEST}"
         const val ANDROIDX_RULES = "androidx.test:rules:${Versions.ANDROIDX_TEST}"
+        const val COMPOSE_UI_TEST = "androidx.compose.ui:ui-test-junit4:${Versions.COMPOSE}"
+        const val COMPOSE_UI_TOOLING = "androidx.compose.ui:ui-tooling:${Versions.COMPOSE}"
     }
 }

@@ -27,7 +27,10 @@ object RootHandler {
      *
      * @return true if the shell has root permission and false otherwise.
      */
+    @Suppress("BlockingMethodInNonBlockingContext")
     suspend fun isShellRooted(): Boolean = withContext(Dispatchers.IO) {
+        // Destroy the potential available shell.
+        Shell.getCachedShell()?.close()
         Shell.getShell().isRoot
     }
 
