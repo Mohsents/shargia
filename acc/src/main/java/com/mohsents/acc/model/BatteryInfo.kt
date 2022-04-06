@@ -23,4 +23,5 @@ data class BatteryInfo(
     val currentNow: String, // Charging current (Amps)
     val voltageNow: String, // Charging voltage (Volts)
     val powerNow: String, // (currentNow * voltageNow) (Watts)
+    val health: String, // Battery health
 )

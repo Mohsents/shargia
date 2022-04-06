@@ -79,16 +79,19 @@ class AccHandlerTest {
 
     @Test
     fun getBatteryInfo_mustNotHaveInvalidInfo() = runTest {
-        fun assert(property: String) =
-            assertThat(property, not(equalTo(DEFAULT_BATTERY_INFO_VALUE)))
+        fun assertNotEqual(
+            property: String,
+            defaultValue: String = DEFAULT_BATTERY_INFO_VALUE
+        ) = assertThat(property, not(equalTo(defaultValue)))
 
         accHandler.getBatteryInfo().onSuccess {
-            assert(it.capacity)
-            assert(it.status)
-            assert(it.temp)
-            assert(it.voltageNow)
-            assert(it.currentNow)
-            assert(it.powerNow)
+            assertNotEqual(it.capacity)
+            assertNotEqual(it.status)
+            assertNotEqual(it.temp)
+            assertNotEqual(it.voltageNow)
+            assertNotEqual(it.currentNow)
+            assertNotEqual(it.powerNow)
+            assertNotEqual(it.health)
         }
     }
 

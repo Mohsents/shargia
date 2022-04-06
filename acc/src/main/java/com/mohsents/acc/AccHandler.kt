@@ -123,11 +123,12 @@ class AccHandler @Inject constructor(
         return@getResult exec(BATTERY_INFO).run {
             BatteryInfo(
                 capacity = findInfoWithPattern(CAPACITY_PATTERN),
-                status = findInfoWithPattern(STATUS_PATTERN, UNKNOWN),
+                status = findInfoWithPattern(STATUS_PATTERN, defaultValue = UNKNOWN),
                 temp = findInfoWithPattern(TEMP_PATTERN),
                 currentNow = findInfoWithPattern(CURRENT_NOW_PATTERN),
                 voltageNow = findInfoWithPattern(VOLTAGE_NOW_PATTERN),
-                powerNow = findInfoWithPattern(POWER_NOW_PATTERN)
+                powerNow = findInfoWithPattern(POWER_NOW_PATTERN),
+                health = findInfoWithPattern(HEALTH_PATTERN)
             )
         }
     }
