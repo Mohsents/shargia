@@ -52,34 +52,34 @@ class AccHandler @Inject constructor(
      *
      * @see getInstalledAccVerCode
      */
-    private suspend fun checkAccExistence() {
-        accInstaller.apply {
-            if (isAccInstalled()) {
-                val installedVerCode = getInstalledAccVerCode()
-                val bundledVerCode = BuildConfig.ACC_VERSION_CODE.toInt()
-                if (installedVerCode < bundledVerCode) {
-                    uninstallAcc()
-                    installAcc()
+    private suspend fun checkAccExistence(): Boolean {
+        when {
+            accInstaller.isAccInstalled() -> {
+                accInstaller.run {
+                    val installedVerCode = getInstalledAccVerCode()
+                    val bundledVerCode = BuildConfig.ACC_VERSION_CODE.toInt()
+                    if (installedVerCode < bundledVerCode) {
+                        uninstallAcc()
+                        return installAcc()
+                    }
                 }
-            } else {
-                installAcc()
+            }
+            else -> {
+                Timber.d("Installing Acc")
+                return accInstaller.installAcc()
             }
         }
+        // Everything fine so returns true
+        return true
     }
 
-    @Throws(AccException::class)
-    override suspend fun exec(
-        vararg options: String
-    ): String = withContext(dispatcher) {
-        val command = buildString {
-            append(ACCA)
-            options.forEach { append(" --$it ") }
-        }
-        Timber.i("Executed command: %s", command)
-        val result = Commander.execSu(command)
-        if (result.isSuccess) {
-            return@withContext result.out.toSortedString()
-        } else throw when (result.code) {
+    /**
+     * Map [resultCode] to its corresponding [AccException].
+     *
+     * @return [AccException] based on [resultCode]
+     */
+    private fun mapCodeToException(resultCode: Int): Exception {
+        return when (resultCode) {
             1 -> AccException.FailedException()
             2 -> AccException.SyntaxException()
             3 -> AccException.NoBusyboxException()
@@ -92,12 +92,35 @@ class AccHandler @Inject constructor(
             12 -> AccException.InitFailedException()
             13 -> AccException.LockFailedException()
             14 -> AccException.ModuleDisabledException()
-            else -> AccException.UnknownException("Acc failed with exit code: ${result.code}")
+            else -> AccException.UnknownException("Acc failed with exit code: $resultCode")
+        }
+    }
+
+    @Throws(AccException::class)
+    override suspend fun exec(
+        vararg options: String
+    ): String = withContext(dispatcher) {
+        val command = buildString {
+            append(ACCA)
+            options.forEach { append(" --$it ") }
+        }
+        val result = Commander.execSu(command)
+        if (result.isSuccess) {
+            Timber.i("Executed command: [%s]", command.removeSuffix(" "))
+            return@withContext result.out.toSortedString()
+        } else {
+            Timber.d(
+                "Failed to execute [${command.removeSuffix(" ")}] cause [${mapCodeToException(result.code)}]"
+            )
+            throw mapCodeToException(result.code)
         }
     }
 
     override suspend fun init(): Result<Unit> = getResult {
-        checkAccExistence()
+        val result: Boolean = checkAccExistence()
+        Timber.d("Init acc result: %s", result)
+        return if (result) Result.success(Unit)
+        else Result.failure(Exception("Failed to initialize ACC."))
     }
 
     override suspend fun getDaemonState(): Result<DaemonState> {
