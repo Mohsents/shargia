@@ -20,14 +20,24 @@ import androidx.compose.material3.AlertDialog
 import androidx.compose.material3.Button
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.semantics.contentDescription
+import androidx.compose.ui.semantics.semantics
 import com.mohsents.ui.R
 
 @Composable
 fun RootNotFoundDialog(
+    modifier: Modifier = Modifier,
     onExit: () -> Unit
 ) {
+    val context = LocalContext.current
     ErrorDialog(
+        modifier = modifier.semantics {
+            contentDescription =
+                context.getString(R.string.root_not_found_dialog_content_description)
+        },
         title = stringResource(id = R.string.root_not_found_dialog_title),
         text = stringResource(id = R.string.root_not_found_dialog_text),
         onExit = onExit
@@ -36,9 +46,15 @@ fun RootNotFoundDialog(
 
 @Composable
 fun InitializationFailedDialog(
+    modifier: Modifier = Modifier,
     onExit: () -> Unit
 ) {
+    val context = LocalContext.current
     ErrorDialog(
+        modifier = modifier.semantics {
+            contentDescription =
+                context.getString(R.string.acc_init_failed_dialog_content_description)
+        },
         title = stringResource(id = R.string.acc_init_failed_dialog_title),
         text = stringResource(id = R.string.acc_init_failed_dialog_text),
         onExit = onExit
@@ -48,6 +64,7 @@ fun InitializationFailedDialog(
 /**
  * Displays an [AlertDialog] with error context.
  *
+ * @param modifier Modifier
  * @param title title of [AlertDialog]
  * @param text text of [AlertDialog]
  * @param onExit (callback) Called when the user tries to dismiss
@@ -55,11 +72,13 @@ fun InitializationFailedDialog(
  */
 @Composable
 fun ErrorDialog(
+    modifier: Modifier = Modifier,
     title: String,
     text: String,
     onExit: () -> Unit
 ) {
     AlertDialog(
+        modifier = modifier,
         title = { Text(text = title) },
         text = { Text(text = text) },
         confirmButton = {

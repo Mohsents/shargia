@@ -14,6 +14,8 @@
  * limitations under the License.
  */
 
+import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
+
 plugins {
     id("com.android.library")
     kotlin("android")
@@ -26,6 +28,7 @@ android {
     defaultConfig {
         minSdk = AppConfig.MIN_SDK_VERSION
         targetSdkPreview = AppConfig.TARGET_SDK_VERSION
+        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables { useSupportLibrary = true }
     }
 
@@ -58,6 +61,10 @@ android {
     }
 }
 
+tasks.withType<KotlinCompile>().configureEach {
+    kotlinOptions.freeCompilerArgs += "-opt-in=kotlin.RequiresOptIn"
+}
+
 dependencies {
     implementation(project(":shell"))
     implementation(project(":acc"))
@@ -73,4 +80,7 @@ dependencies {
     implementation(Dependencies.Libs.HILT)
     kapt(Dependencies.Libs.HILT_ANDROID_COMPILER)
     debugImplementation(Dependencies.Libs.COMPOSE_UI_TOOLING)
+    androidTestImplementation(Dependencies.Libs.JUNIT)
+    androidTestImplementation(Dependencies.Libs.COMPOSE_UI_TEST)
+    debugImplementation(Dependencies.Libs.COMPOSE_UI_TEST_MANIFEST)
 }

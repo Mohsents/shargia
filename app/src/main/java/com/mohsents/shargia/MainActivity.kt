@@ -21,56 +21,41 @@ import androidx.activity.ComponentActivity
 import androidx.activity.addCallback
 import androidx.activity.compose.setContent
 import androidx.activity.viewModels
-import androidx.compose.runtime.Composable
 import androidx.lifecycle.lifecycleScope
-import com.mohsents.ui.screen.InitializationFailedDialog
-import com.mohsents.ui.screen.MainScreen
-import com.mohsents.ui.screen.RootNotFoundDialog
-import com.mohsents.ui.screen.ScreenState
+import com.mohsents.ui.screen.LoadingScreen
+import com.mohsents.ui.screen.ShargiaApp
 import com.mohsents.ui.theme.ShargiaTheme
-import com.mohsents.ui.viewmodel.MainViewModel
+import com.mohsents.ui.viewmodel.ViewModel
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.launch
 
 @AndroidEntryPoint
 class MainActivity : ComponentActivity() {
 
-    private val mainViewModel: MainViewModel by viewModels()
+    private val viewModel: ViewModel by viewModels()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
+        setContent {
+            ShargiaTheme {
+                LoadingScreen()
+            }
+        }
+
         lifecycleScope.launch {
-            val isDeviceRooted = mainViewModel.isDeviceRooted()
-            val initAccResult = mainViewModel.initAcc()
-
-            val screenState =
-                if (!isDeviceRooted) ScreenState.NO_ROOT
-                else if (initAccResult.isFailure) {
-                    ScreenState.INITIALIZATION_FAILED
-                } else {
-                    ScreenState.MAIN_SCREEN
-                }
-
+            val screenState = viewModel.getScreenState()
             setContent {
-                ShargiaApp(screenState)
+                ShargiaApp(
+                    viewModel = viewModel,
+                    screenState = screenState
+                ) { finish() }
             }
         }
 
         onBackPressedDispatcher.addCallback {
             // Explicitly finish the Activity, So after re-launch screen state will be updated.
             finish()
-        }
-    }
-
-    @Composable
-    fun ShargiaApp(screenState: ScreenState) {
-        ShargiaTheme {
-            when (screenState) {
-                ScreenState.NO_ROOT -> RootNotFoundDialog(onExit = { finish() })
-                ScreenState.INITIALIZATION_FAILED -> InitializationFailedDialog(onExit = { finish() })
-                ScreenState.MAIN_SCREEN -> MainScreen()
-            }
         }
     }
 }

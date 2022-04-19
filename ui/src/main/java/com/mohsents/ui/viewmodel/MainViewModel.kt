@@ -16,18 +16,13 @@
 
 package com.mohsents.ui.viewmodel
 
-import androidx.lifecycle.ViewModel
-import com.mohsents.acc.AccHandler
-import com.mohsents.shell.root.RootHandler
-import dagger.hilt.android.lifecycle.HiltViewModel
-import javax.inject.Inject
+import com.mohsents.acc.model.BatteryInfo
+import com.mohsents.ui.screen.ScreenState
 
-@HiltViewModel
-class MainViewModel @Inject constructor(
-    private val accHandler: AccHandler
-) : ViewModel() {
-
-    suspend fun isDeviceRooted(): Boolean = RootHandler.isShellRooted()
-
-    suspend fun initAcc() = accHandler.init()
+/**
+ * Base contract for ViewModel.
+ */
+interface MainViewModel {
+    suspend fun getScreenState(): ScreenState
+    suspend fun getBatteryInfo(): Result<BatteryInfo>
 }
