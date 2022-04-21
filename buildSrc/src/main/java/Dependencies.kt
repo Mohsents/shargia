@@ -42,9 +42,12 @@ object Dependencies {
         const val COMPOSE_TOOLING_PREVIEW =
             "androidx.compose.ui:ui-tooling-preview:${Versions.COMPOSE}"
         const val COMPOSE_FOUNDATION = "androidx.compose.foundation:foundation:${Versions.COMPOSE}"
-        const val COMPOSE_MATERIAL3 = "androidx.compose.material3:material3:1.0.0-alpha08"
+        const val COMPOSE_MATERIAL3 =
+            "androidx.compose.material3:material3:${Versions.COMPOSE_MATERIAL3}"
         const val COMPOSE_MATERIAL_ICONS =
             "androidx.compose.material:material-icons-core:${Versions.COMPOSE}"
+        const val COMPOSE_CONSTRAINT_LAYOUT =
+            "androidx.constraintlayout:constraintlayout-compose:${Versions.COMPOSE_CONSTRAINT_LAYOUT}"
         const val COMPOSE_ACTIVITY =
             "androidx.activity:activity-compose:${Versions.COMPOSE_ACTIVITY}"
         const val COMPOSE_VIEWMODEL =

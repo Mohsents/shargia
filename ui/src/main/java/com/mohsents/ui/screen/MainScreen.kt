@@ -16,16 +16,49 @@
 
 package com.mohsents.ui.screen
 
-import androidx.compose.foundation.layout.Box
-import androidx.compose.foundation.layout.fillMaxSize
+import android.content.res.Configuration.UI_MODE_NIGHT_YES
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.padding
+import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
-import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.tooling.preview.Preview
+import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
+import com.mohsents.ui.R
+import com.mohsents.ui.fakeBatteryInfo
+import com.mohsents.ui.theme.ShargiaTheme
+import com.mohsents.ui.viewmodel.FakeViewViewModel
+import com.mohsents.ui.viewmodel.MainViewModel
 
 @Composable
-fun MainScreen() {
-    Box(modifier = Modifier.fillMaxSize()) {
-        Text(text = "Main Screen", modifier = Modifier.align(Alignment.Center))
+fun MainScreen(viewModel: MainViewModel) {
+    Surface {
+        Column(modifier = Modifier.padding(top = 100.dp, start = 20.dp, end = 20.dp)) {
+            Text(text = stringResource(id = R.string.app_name), fontSize = 40.sp)
+            Spacer(modifier = Modifier.height(10.dp))
+            BatteryInfoCard(viewModel)
+        }
+    }
+}
+
+@Preview(showBackground = true)
+@Composable
+fun MainScreenPreviewLight() {
+    ShargiaTheme {
+        FakeViewViewModel.updateUiState(UiState(isLodging = false, batteryInfo = fakeBatteryInfo))
+        MainScreen(FakeViewViewModel)
+    }
+}
+
+@Preview(showBackground = true, uiMode = UI_MODE_NIGHT_YES)
+@Composable
+fun MainScreenPreviewDark() {
+    ShargiaTheme {
+        MainScreen(FakeViewViewModel)
     }
 }

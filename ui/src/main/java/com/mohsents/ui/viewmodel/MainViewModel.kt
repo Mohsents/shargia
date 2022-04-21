@@ -16,13 +16,16 @@
 
 package com.mohsents.ui.viewmodel
 
-import com.mohsents.acc.model.BatteryInfo
+import androidx.compose.runtime.State
 import com.mohsents.ui.screen.ScreenState
+import com.mohsents.ui.screen.UiState
 
 /**
  * Base contract for ViewModel.
  */
 interface MainViewModel {
     suspend fun getScreenState(): ScreenState
-    suspend fun getBatteryInfo(): Result<BatteryInfo>
+    val uiState: State<UiState>
+    fun updateUiState()
+    suspend fun getScreenState(): ScreenState
 }

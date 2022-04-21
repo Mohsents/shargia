@@ -35,6 +35,7 @@ internal object Versions {
     const val CORE = "1.7.0"
     const val COMPOSE = "1.1.1"
     const val COMPOSE_ACTIVITY = "1.4.0"
+    const val COMPOSE_CONSTRAINT_LAYOUT = "1.0.0"
     const val ARCH = "2.4.1"
     const val HILT = "2.41"
     const val JUNIT = "4.13.2"

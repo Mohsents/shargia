@@ -15,9 +15,34 @@
   -->
 
 <resources>
+    <string name="app_name">Shargia</string>
     <string name="close_label">Close</string>
     <string name="root_not_found_dialog_title">"Root Not Found"</string>
     <string name="root_not_found_dialog_text">"Root access not found. Make sure your device is rooted and the Shargia has root permission."</string>
+    <string name="root_not_found_dialog_content_description">@string/root_not_found_dialog_title</string>
     <string name="acc_init_failed_dialog_title">Initialization Failed</string>
     <string name="acc_init_failed_dialog_text">Initialization failed. Maybe your device is incompatible.</string>
+    <string name="acc_init_failed_dialog_content_description">@string/acc_init_failed_dialog_title</string>
+    <string name="battery_info_status_label">Status</string>
+    <string name="battery_info_temp_label">Temp</string>
+    <string name="battery_info_voltage_label">Voltage</string>
+    <string name="battery_info_current_label">Current</string>
+    <string name="battery_info_power_label">Power</string>
+    <string name="battery_info_health_label">Health</string>
+    <string name="battery_info_current_suffix_label">A</string>
+    <string name="battery_info_voltage_suffix_label">V</string>
+    <string name="battery_info_power_suffix_label">W</string>
+    <string name="battery_info_temp_suffix_label">°C</string>
+    <string name="battery_info_unknown_capacity_label">Unknown</string>
+    <string name="battery_info_charging_status_label">Charging</string>
+    <!-- Resources for only `fa` language to localize battery info. -->
+    <string name="battery_info_discharge_status_label" translatable="false">در حال تخلیه</string>
+    <string name="battery_info_unknown_status_label" translatable="false">نامشخص</string>
+    <string name="battery_info_good_battery_health_label" translatable="false">خوب</string>
+    <string name="battery_info_dead_battery_health_label" translatable="false">خراب</string>
+    <string name="battery_info_over_voltage_battery_health_label" translatable="false">جریان زیاد</string>
+    <string name="battery_info_over_heat_battery_health_label" translatable="false">دمای بالا</string>
+    <string name="battery_info_unknown_battery_health_label" translatable="false">نامشخص</string>
+    <!-- Resources for only `fa` language to localize battery info. -->
+    <string name="error_screen_text_label">Something went wrong</string>
 </resources>

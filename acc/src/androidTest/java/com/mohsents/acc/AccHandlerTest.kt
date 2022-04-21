@@ -41,7 +41,7 @@ class AccHandlerTest {
     val rootRule = RootCheckRule()
 
     @Inject
-    lateinit var accHandler: AccHandler
+    lateinit var acc: Acc
 
     @Before
     fun initialize() {
@@ -50,12 +50,12 @@ class AccHandlerTest {
 
     @Test
     fun init_mustRunSuccessfully() = runTest {
-        assert(accHandler.init().isSuccess)
+        assert(acc.init().isSuccess)
     }
 
     @Test
     fun startDaemon_DaemonStateMustEqualTo_STARTED() = runTest {
-        accHandler.apply {
+        acc.apply {
             // Stop daemon if it already running
             stopDaemon()
             startDaemon()
@@ -67,7 +67,7 @@ class AccHandlerTest {
 
     @Test
     fun stopDaemon_DaemonStateMustEqualTo_STOPPED() = runTest {
-        accHandler.apply {
+        acc.apply {
             // Start daemon if it already not running
             startDaemon()
             stopDaemon()
@@ -84,7 +84,7 @@ class AccHandlerTest {
             defaultValue: String = DEFAULT_BATTERY_INFO_VALUE
         ) = assertThat(property, not(equalTo(defaultValue)))
 
-        accHandler.getBatteryInfo().onSuccess {
+        acc.getBatteryInfo().onSuccess {
             assertNotEqual(it.capacity)
             assertNotEqual(it.status)
             assertNotEqual(it.temp)
@@ -97,21 +97,21 @@ class AccHandlerTest {
 
     @Test
     fun setStartStopCharging_mustRunSuccessfully() = runTest {
-        assert(accHandler.setStartStopCharging(25, 85).isSuccess)
+        assert(acc.setStartStopCharging(25, 85).isSuccess)
     }
 
     @Test
     fun limitChargingCurrent_mustRunSuccessfully() = runTest {
-        assert(accHandler.limitChargingCurrent().isSuccess)
+        assert(acc.limitChargingCurrent().isSuccess)
     }
 
     @Test
     fun setChargingCurrent_mustRunSuccessfully() = runTest {
-        assert(accHandler.setChargingCurrent(DEFAULT_VOLT, DEFAULT_CURRENT).isSuccess)
+        assert(acc.setChargingCurrent(DEFAULT_VOLT, DEFAULT_CURRENT).isSuccess)
     }
 
     @Test
     fun setChargingCurrent_IfGetInvalidParams_ResultMustBeFailure() = runTest {
-        assert(accHandler.setChargingCurrent(-1, -1).isFailure)
+        assert(acc.setChargingCurrent(-1, -1).isFailure)
     }
 }
