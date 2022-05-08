@@ -16,11 +16,19 @@
 
 package com.mohsents.shared.util
 
+import androidx.annotation.CheckResult
+import kotlinx.coroutines.CancellationException
+
 /**
- * A helper function that wrap [block] to catch its exceptions.
+ * Wraps [block] to catch its exceptions and returns [Result] of type [R] or [Exception].
+ *
+ * Cancellation exceptions need to be rethrown.
  */
-inline fun <T> getResult(block: () -> T): Result<T> = try {
+@CheckResult
+inline fun <R> getResult(block: () -> R): Result<R> = try {
     Result.success(block())
+} catch (e: CancellationException) {
+    throw e
 } catch (e: Exception) {
     Result.failure(e)
 }
