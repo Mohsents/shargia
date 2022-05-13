@@ -27,12 +27,11 @@ import kotlinx.coroutines.withContext
 import timber.log.Timber
 import javax.inject.Inject
 import javax.inject.Singleton
-
 @Singleton
 class AccHandler @Inject constructor(
     private val accInstaller: AccInstaller,
     @IoDispatcher
-    private val dispatcher: CoroutineDispatcher
+    private val dispatcher: CoroutineDispatcher,
 ) : Acc {
 
     /**
@@ -98,7 +97,7 @@ class AccHandler @Inject constructor(
 
     @Throws(AccException::class)
     override suspend fun exec(
-        vararg options: String
+        vararg options: String,
     ): String = withContext(dispatcher) {
         val command = buildString {
             append(ACCA)
@@ -156,28 +155,46 @@ class AccHandler @Inject constructor(
         }
     }
 
-    override suspend fun setStartStopCharging(
-        startAt: Int,
-        stopAt: Int
-    ): Result<Unit> = getResult {
-        exec("$SET $PAUSE_CAPACITY=$stopAt $RESUME_CAPACITY=$startAt")
+    override suspend fun setStartCharging(startAt: Int): Result<Unit> = getResult {
+        exec("$SET $RESUME_CAPACITY=$startAt")
     }
 
-    override suspend fun setChargingCurrent(millivolts: Int, milliamps: Int): Result<Unit> {
-        if (millivolts !in voltRange) {
-            return Result.failure(AccException.UnknownException("millivolts must be in range $voltRange"))
-        }
+    override suspend fun setStopCharging(stopAt: Int): Result<Unit> = getResult {
+        exec("$SET $PAUSE_CAPACITY=$stopAt")
+    }
 
-        if (milliamps !in currentRange) {
-            return Result.failure(AccException.UnknownException("milliamps must be in range $currentRange"))
+    override suspend fun setChargingVoltage(milliVolts: Int): Result<Unit> {
+        if (milliVolts !in voltRange) {
+            return Result.failure(AccException.UnknownException("milliVolts must be in range $voltRange"))
         }
 
         return getResult {
-            exec(SET, "$CURRENT_VOLTAGE $millivolts")
-            exec(SET, "$CURRENT_AMPERE $milliamps")
+            exec(SET, "$CURRENT_VOLTAGE $milliVolts")
         }
     }
 
-    override suspend fun limitChargingCurrent(): Result<Unit> =
-        setChargingCurrent(millivolts = DEFAULT_VOLT, milliamps = DEFAULT_CURRENT)
+    override suspend fun setChargingCurrent(milliAmps: Int): Result<Unit> {
+        if (milliAmps !in currentRange) {
+            return Result.failure(AccException.UnknownException("milliAmps must be in range $currentRange"))
+        }
+
+        return getResult {
+            exec(SET, "$CURRENT_AMPERE $milliAmps")
+        }
+    }
+
+    override suspend fun limitChargingPower(): Result<Unit> = getResult {
+        setChargingVoltage(DEFAULT_VOLT)
+        setChargingCurrent(DEFAULT_CURRENT)
+    }
+
+    override suspend fun restoreChargingPower(): Result<Unit> = getResult {
+        exec(SET, "$CURRENT_VOLTAGE -")
+        exec(SET, "$CURRENT_AMPERE -")
+    }
+
+    override suspend fun restoreStartStopCharging(): Result<Unit> = getResult {
+        setStartCharging(0)
+        setStopCharging(100)
+    }
 }

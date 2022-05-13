@@ -81,7 +81,7 @@ class AccHandlerTest {
     fun getBatteryInfo_mustNotHaveInvalidInfo() = runTest {
         fun assertNotEqual(
             property: String,
-            defaultValue: String = DEFAULT_BATTERY_INFO_VALUE
+            defaultValue: String = DEFAULT_BATTERY_INFO_VALUE,
         ) = assertThat(property, not(equalTo(defaultValue)))
 
         acc.getBatteryInfo().onSuccess {
@@ -96,22 +96,77 @@ class AccHandlerTest {
     }
 
     @Test
-    fun setStartStopCharging_mustRunSuccessfully() = runTest {
-        assert(acc.setStartStopCharging(25, 85).isSuccess)
+    fun setStartCharging_mustRunSuccessfully() = runTest {
+        assert(acc.setStartCharging(25).isSuccess)
     }
 
     @Test
-    fun limitChargingCurrent_mustRunSuccessfully() = runTest {
-        assert(acc.limitChargingCurrent().isSuccess)
+    fun setStopCharging_mustRunSuccessfully() = runTest {
+        assert(acc.setStopCharging(100).isSuccess)
+    }
+
+    @Test
+    fun limitChargingPower_mustRunSuccessfully() = runTest {
+        assert(acc.limitChargingPower().isSuccess)
+    }
+
+    @Test
+    fun setChargingVoltage_mustRunSuccessfully() = runTest {
+        assert(acc.setChargingVoltage(DEFAULT_VOLT).isSuccess)
     }
 
     @Test
     fun setChargingCurrent_mustRunSuccessfully() = runTest {
-        assert(acc.setChargingCurrent(DEFAULT_VOLT, DEFAULT_CURRENT).isSuccess)
+        assert(acc.setChargingCurrent(DEFAULT_CURRENT).isSuccess)
     }
 
     @Test
-    fun setChargingCurrent_IfGetInvalidParams_ResultMustBeFailure() = runTest {
-        assert(acc.setChargingCurrent(-1, -1).isFailure)
+    fun setChargingVoltage_IfGetsInvalidParams_ResultMustBeFailure() = runTest {
+        assert(acc.setChargingVoltage(-1).isFailure)
+    }
+
+    @Test
+    fun setChargingCurrent_IfGetsInvalidParams_ResultMustBeFailure() = runTest {
+        assert(acc.setChargingCurrent(-1).isFailure)
+    }
+
+    @Test
+    fun setChargingVoltage_restoreChargingPower_mustBeSuccess() = runTest {
+        val voltage = 4300
+        acc.setChargingVoltage(voltage)
+
+        val result = acc.restoreChargingPower()
+
+        assert(result.isSuccess)
+    }
+
+    @Test
+    fun setChargingCurrent_restoreChargingPower_mustBeSuccess() = runTest {
+        val current = 9999
+        acc.setChargingCurrent(current)
+
+        val result = acc.restoreChargingPower()
+
+        assert(result.isSuccess)
+    }
+
+    @Test
+    fun setStartCharging_restoreStartStopCharging_mustBeSuccess() = runTest {
+        val startAt = 25
+        acc.setStartCharging(startAt)
+
+        val result = acc.restoreStartStopCharging()
+
+        assert(result.isSuccess)
+    }
+
+    @Test
+    fun setStopCharging_restoreStartStopCharging_mustBeSuccess() = runTest {
+        val stopAt = 85
+        acc.setStartCharging(stopAt)
+
+        val result = acc.restoreStartStopCharging()
+
+        assert(result.isSuccess)
     }
 }

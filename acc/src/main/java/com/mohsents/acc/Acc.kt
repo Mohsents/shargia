@@ -102,31 +102,61 @@ interface Acc {
     suspend fun getBatteryInfo(): Result<BatteryInfo>
 
     /**
-     * Sets the start and stop capacity for charging.
+     * Sets the start capacity for charging.
      *
      * @param startAt charging starts at this level
+     * @return [Result] of [Unit]
+     */
+    suspend fun setStartCharging(startAt: Int): Result<Unit>
+
+    /**
+     * Sets the pause capacity for charging.
+     *
      * @param stopAt charging stops at this level
      * @return [Result] of [Unit]
      */
-    suspend fun setStartStopCharging(startAt: Int, stopAt: Int): Result<Unit>
+    suspend fun setStopCharging(stopAt: Int): Result<Unit>
 
     /**
-     * Sets the current [milliamps] and [milliamps] for charging.
+     * Sets the voltage for charging.
      *
      * The values must be in specific range as follow:
-     * [millivolts]: 3700_4300
-     * [milliamps]: 0_9999
+     * [milliVolts]: 3700_4300
      *
-     * @param millivolts voltage current for charging
-     * @param milliamps current for charging
+     * @param milliVolts voltage current for charging
      * @return [Result] of [Unit]
      */
-    suspend fun setChargingCurrent(millivolts: Int, milliamps: Int): Result<Unit>
+    suspend fun setChargingVoltage(milliVolts: Int): Result<Unit>
+
+    /**
+     * Sets the ampere current for charging.
+     *
+     * The values must be in specific range as follow:
+     * [milliAmps]: 0_9999
+     *
+     * @param milliAmps current for charging
+     * @return [Result] of [Unit]
+     */
+    suspend fun setChargingCurrent(milliAmps: Int): Result<Unit>
 
     /**
      * Sets an default current and voltage for limit charging to prolong battery life.
      *
      * @return [Result] of [Unit]
      */
-    suspend fun limitChargingCurrent(): Result<Unit>
+    suspend fun limitChargingPower(): Result<Unit>
+
+    /**
+     * Sets the default maximum voltage and maximum current.
+     *
+     * @return [Result] of [Unit]
+     */
+    suspend fun restoreChargingPower(): Result<Unit>
+
+    /**
+     * Sets the default maximum percent (100) and minimum percent (0) for charging.
+     *
+     * @return [Result] of [Unit]
+     */
+    suspend fun restoreStartStopCharging(): Result<Unit>
 }
