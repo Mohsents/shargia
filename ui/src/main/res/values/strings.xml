@@ -17,6 +17,8 @@
 <resources>
     <string name="app_name">Shargia</string>
     <string name="close_label">Close</string>
+    <string name="cancel_label">Cancel</string>
+    <string name="ok_label">OK</string>
     <string name="root_not_found_dialog_title">"Root Not Found"</string>
     <string name="root_not_found_dialog_text">"Root access not found. Make sure your device is rooted and the Shargia has root permission."</string>
     <string name="root_not_found_dialog_content_description">@string/root_not_found_dialog_title</string>
@@ -45,4 +47,26 @@
     <string name="battery_info_unknown_battery_health_label" translatable="false">نامشخص</string>
     <!-- Resources for only `fa` language to localize battery info. -->
     <string name="error_screen_text_label">Something went wrong</string>
+    <string name="enable_service_text_label">Enable Service</string>
+    <string name="enable_notification_text_label">Notification</string>
+    <string name="enable_limit_charging_power_text_label">Limit charging power</string>
+    <string name="enable_limit_charging_power_summary_label">Set charging power to 2W to prolong battery life</string>
+    <string name="enable_set_charging_power_text_label">Set charging power</string>
+    <string name="setting_set_charging_current_text_label">Set current</string>
+    <string name="setting_set_charging_current_summary_label">%s mA</string>
+    <string name="setting_set_charging_current_error_label">Must be in range of 0 to 9999 mA</string>
+    <string name="setting_set_charging_voltage_text_label">Set voltage</string>
+    <string name="setting_set_charging_voltage_summary_label">%s mV</string>
+    <string name="setting_set_charging_voltage_error_label">Must be in range of 3700 to 4200 mV</string>
+    <string name="enable_set_start_stop_charging_text_label">Set start/stop charging</string>
+    <string name="setting_set_start_charging_text_label">Start at</string>
+    <string name="setting_set_start_charging_summary_label">%s %%</string>
+    <string name="setting_set_stop_charging_text_label">Stop at</string>
+    <string name="setting_set_stop_charging_summary_label">%s %%</string>
+    <string name="setting_info_description_text">These settings may break your device. To prolong battery life, limit charging power to 2W and keep your device away from heat. It\'s recommended to start charging at 25% and stop it at 85% for best longevity.</string>
+    <string name="service_notification_channel_id" translatable="false">1</string>
+    <string name="service_notification_channel_name">Service</string>
+    <string name="service_notification_id" translatable="false">1</string>
+    <string name="service_notification_content_title">Shargia Service</string>
+    <string name="service_notification_content_text">Failed to start service</string>
 </resources>

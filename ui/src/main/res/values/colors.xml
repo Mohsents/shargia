@@ -16,7 +16,12 @@
 
 <resources>
     <color name="primary">#1B60A6</color>
+    <color name="primaryContainer">#FFd3e4ff</color>
     <color name="onPrimary">#FFFFFF</color>
     <color name="secondary">#006688</color>
     <color name="onSecondary">#FFFFFF</color>
+    <color name="switch_thumb_enabled">@color/primaryContainer</color>
+    <color name="switch_thumb_disabled">#DADADA</color>
+    <color name="switch_track_enabled">#4A58A3</color>
+    <color name="switch_track_disabled">#707070</color>
 </resources>

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-@file:OptIn(ExperimentalMaterial3Api::class, ExperimentalComposeUiApi::class)
+@file:OptIn(ExperimentalMaterial3Api::class)
 
 package com.mohsents.ui.screen
 
@@ -30,7 +30,6 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
-import androidx.compose.ui.ExperimentalComposeUiApi
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.platform.LocalContext
@@ -43,14 +42,19 @@ import androidx.compose.ui.unit.sp
 import androidx.constraintlayout.compose.ConstraintLayout
 import com.mohsents.acc.model.BatteryInfo
 import com.mohsents.ui.R
-import com.mohsents.ui.fakeBatteryInfo
-import com.mohsents.ui.isInLandscape
-import com.mohsents.ui.localize
 import com.mohsents.ui.theme.ShargiaTheme
+import com.mohsents.ui.utils.LaunchWhenResumed
+import com.mohsents.ui.utils.fakeBatteryInfo
+import com.mohsents.ui.utils.isInLandscape
+import com.mohsents.ui.utils.localize
 import com.mohsents.ui.viewmodel.MainViewModel
 
 @Composable
 fun BatteryInfoCard(viewModel: MainViewModel) {
+    LaunchWhenResumed {
+        viewModel.updateUiState()
+    }
+
     val (isLoading, isError, batteryInfo) = viewModel.uiState.value
     when {
         isLoading -> LoadingScreen()

@@ -17,6 +17,8 @@
 <resources>
     <string name="app_name">شارژیا</string>
     <string name="close_label">بستن</string>
+    <string name="cancel_label">لغو</string>
+    <string name="ok_label">تایید</string>
     <string name="root_not_found_dialog_title">"روت پیدا نشد"</string>
     <string name="root_not_found_dialog_content_description">@string/root_not_found_dialog_title</string>
     <string name="root_not_found_dialog_text">"دسترسی روت پیدا نشد. مطمئن شوید دستگاه روت شده و مجوز روت به شارژیا اعطا شده است."</string>
@@ -36,4 +38,24 @@
     <string name="battery_info_unknown_capacity_label">نامشخص</string>
     <string name="battery_info_charging_status_label">در حال شارژ</string>
     <string name="error_screen_text_label">مشکلی پیش آمد</string>
+    <string name="enable_service_text_label">سرویس</string>
+    <string name="enable_notification_text_label">اعلان</string>
+    <string name="enable_limit_charging_power_text_label">محدود کردن توان شارژ</string>
+    <string name="enable_limit_charging_power_summary_label">برای افزایش عمر باتری، توان شارژ را روی ۲ وات تنظیم کنید</string>
+    <string name="enable_set_charging_power_text_label">تنظیم قدرت شارژ</string>
+    <string name="setting_set_charging_current_text_label">جریان</string>
+    <string name="setting_set_charging_current_summary_label">%s میلی آمپر</string>
+    <string name="setting_set_charging_current_error_label">باید در محدوده ۰ تا ۹۹۹۹ باشد</string>
+    <string name="setting_set_charging_voltage_text_label">ولتاژ</string>
+    <string name="setting_set_charging_voltage_summary_label">%s میلی ولت</string>
+    <string name="setting_set_charging_voltage_error_label">باید در محدوده ۳۷۰۰ تا ۴۲۰۰ میلی ولت باشد</string>
+    <string name="enable_set_start_stop_charging_text_label">شروع/توقف شارژ</string>
+    <string name="setting_set_start_charging_text_label">شروع</string>
+    <string name="setting_set_start_charging_summary_label">٪ %s</string>
+    <string name="setting_set_stop_charging_text_label">توقف</string>
+    <string name="setting_set_stop_charging_summary_label">٪ %s</string>
+    <string name="setting_info_description_text">این تنظیمات ممکن است دستگاه شما را خراب کند. برای افزایش عمر باتری، توان شارژ را به ۲ وات محدود کنید و دستگاه خود را از گرما دور نگه دارید. برای بهترین طول عمر، توصیه می شود شارژ را از ۲۵ درصد شروع و آن را در ۸۵ درصد متوقف کنید.</string>
+    <string name="service_notification_channel_name">سرویس</string>
+    <string name="service_notification_content_title">سرویس شارژیا</string>
+    <string name="service_notification_content_text">خطا در شروع سرویس</string>
 </resources>

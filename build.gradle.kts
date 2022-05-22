@@ -25,6 +25,8 @@ buildscript {
         classpath(Dependencies.Plugins.AGP)
         classpath(Dependencies.Plugins.KOTLIN)
         classpath(Dependencies.Plugins.HILT)
+        classpath(Dependencies.Plugins.GMS)
+        classpath(Dependencies.Plugins.FIREBASE_CRASHLYTICS)
     }
 }
 

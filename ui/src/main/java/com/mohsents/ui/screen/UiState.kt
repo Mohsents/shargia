@@ -17,7 +17,7 @@
 package com.mohsents.ui.screen
 
 import com.mohsents.acc.model.BatteryInfo
-import com.mohsents.ui.defaultBatteryInfo
+import com.mohsents.ui.utils.defaultBatteryInfo
 
 /**
  * A wrapper for [ScreenState.MAIN_SCREEN]'s UI state.

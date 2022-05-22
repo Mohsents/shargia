@@ -23,11 +23,11 @@ plugins {
 }
 
 android {
-    compileSdkPreview = AppConfig.COMPILE_SDK_VERSION
+    compileSdk = AppConfig.COMPILE_SDK_VERSION
 
     defaultConfig {
         minSdk = AppConfig.MIN_SDK_VERSION
-        targetSdkPreview = AppConfig.TARGET_SDK_VERSION
+        targetSdk = AppConfig.TARGET_SDK_VERSION
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables { useSupportLibrary = true }
     }
@@ -78,10 +78,16 @@ dependencies {
     implementation(Dependencies.Libs.COMPOSE_TOOLING_PREVIEW)
     implementation(Dependencies.Libs.COMPOSE_CONSTRAINT_LAYOUT)
     implementation(Dependencies.Libs.HILT)
+    implementation(Dependencies.Libs.WORK_MANAGER_RUNTIME)
+    kapt(Dependencies.Libs.HILT_COMPILER)
     api(Dependencies.Libs.COMPOSE_ACTIVITY)
     kapt(Dependencies.Libs.HILT_ANDROID_COMPILER)
     debugImplementation(Dependencies.Libs.COMPOSE_UI_TOOLING)
     androidTestImplementation(Dependencies.Libs.JUNIT)
     androidTestImplementation(Dependencies.Libs.COMPOSE_UI_TEST)
     debugImplementation(Dependencies.Libs.COMPOSE_UI_TEST_MANIFEST)
+
+    // TODO Remove these artifacts when compose preview bugs fixed.
+    debugImplementation(Dependencies.Libs.CUSTOM_VIEW)
+    debugImplementation(Dependencies.Libs.CUSTOM_VIEW_POOLING_ADAPTER)
 }

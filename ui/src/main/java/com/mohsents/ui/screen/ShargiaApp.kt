@@ -25,7 +25,7 @@ import com.mohsents.ui.viewmodel.MainViewModel
  *
  * @param viewModel Main viewModel of the app.
  * @param screenState (State) current state of the screen that must be show.
- * @param onExit (Callback) when the user tap on the exit button of the dialog, this will be called.
+ * @param onExit Will be called when request for exit receives from dialogs.
  */
 @Composable
 fun ShargiaApp(

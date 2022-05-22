@@ -18,12 +18,22 @@
 
     <style name="AppTheme" parent="BaseAppTheme" />
 
-    <style name="BaseAppTheme" parent="Theme.Material3.DayNight">
+    <style name="BaseAppTheme" parent="Theme.Material3.DayNight.NoActionBar">
         <item name="colorPrimary">@color/primary</item>
         <item name="colorOnPrimary">@color/onPrimary</item>
         <item name="colorSecondary">@color/secondary</item>
         <item name="colorOnSecondary">@color/onSecondary</item>
+        <item name="switchStyle">@style/SwitchTheme</item>
+        <item name="android:statusBarColor">@android:color/black</item>
     </style>
 
+    <style name="SwitchTheme" parent="Widget.Material3.CompoundButton.Switch">
+        <item name="android:switchMinWidth">52dp</item>
+        <item name="android:minHeight">48dp</item>
+        <item name="track">@drawable/switch_track</item>
+        <item name="android:thumb">@drawable/switch_thumb</item>
+        <item name="trackTint">@color/switch_track_color</item>
+        <item name="thumbTint">@color/switch_thumb_color</item>
+    </style>
 
 </resources>

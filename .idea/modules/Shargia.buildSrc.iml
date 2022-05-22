@@ -24,6 +24,7 @@
           <option name="noStdlib" value="true" />
           <option name="noReflect" value="true" />
           <option name="moduleName" value="buildSrc" />
+          <option name="jvmTarget" value="1.8" />
           <option name="languageVersion" value="1.4" />
           <option name="apiVersion" value="1.4" />
           <option name="pluginOptions">
@@ -62,51 +63,10 @@
     <output-test url="file://$MODULE_DIR$/../../buildSrc/build/classes/java/test" />
     <exclude-output />
     <content url="file://$MODULE_DIR$/../../buildSrc">
-      <sourceFolder url="file://$MODULE_DIR$/../../buildSrc/src/main/java" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/../../buildSrc/.gradle" />
       <excludeFolder url="file://$MODULE_DIR$/../../buildSrc/build" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" scope="PROVIDED" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.5.31" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Gradle: org.jetbrains.kotlin:kotlin-reflect:1.5.31" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.5.31" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib:1.5.31" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Gradle: org.jetbrains:annotations:13.0" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-common:1.5.31" level="project" />
-    <orderEntry type="library" name="Gradle: gradle-api-7.4.1" level="project" />
-    <orderEntry type="library" name="Gradle: groovy-3.0.9" level="project" />
-    <orderEntry type="library" name="Gradle: groovy-ant-3.0.9" level="project" />
-    <orderEntry type="library" name="Gradle: groovy-astbuilder-3.0.9" level="project" />
-    <orderEntry type="library" name="Gradle: groovy-console-3.0.9" level="project" />
-    <orderEntry type="library" name="Gradle: groovy-datetime-3.0.9" level="project" />
-    <orderEntry type="library" name="Gradle: groovy-dateutil-3.0.9" level="project" />
-    <orderEntry type="library" name="Gradle: groovy-groovydoc-3.0.9" level="project" />
-    <orderEntry type="library" name="Gradle: groovy-json-3.0.9" level="project" />
-    <orderEntry type="library" name="Gradle: groovy-nio-3.0.9" level="project" />
-    <orderEntry type="library" name="Gradle: groovy-sql-3.0.9" level="project" />
-    <orderEntry type="library" name="Gradle: groovy-templates-3.0.9" level="project" />
-    <orderEntry type="library" name="Gradle: groovy-test-3.0.9" level="project" />
-    <orderEntry type="library" name="Gradle: groovy-xml-3.0.9" level="project" />
-    <orderEntry type="library" name="Gradle: javaparser-core-3.17.0" level="project" />
-    <orderEntry type="library" name="Gradle: kotlin-stdlib-1.5.31" level="project" />
-    <orderEntry type="library" name="Gradle: kotlin-stdlib-common-1.5.31" level="project" />
-    <orderEntry type="library" name="Gradle: kotlin-stdlib-jdk7-1.5.31" level="project" />
-    <orderEntry type="library" name="Gradle: kotlin-stdlib-jdk8-1.5.31" level="project" />
-    <orderEntry type="library" name="Gradle: kotlin-reflect-1.5.31" level="project" />
-    <orderEntry type="library" name="Gradle: gradle-installation-beacon-7.4.1" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Gradle: gradle-kotlin-dsl-extensions-7.4.1" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Gradle: gradle-kotlin-dsl-7.4.1" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Gradle: gradle-kotlin-dsl-tooling-models-7.4.1" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: gradle-test-kit-7.4.1" level="project" />
-    <orderEntry type="module-library" scope="TEST">
-      <library>
-        <CLASSES>
-          <root url="file://$MODULE_DIR$/../../buildSrc/build/pluginUnderTestMetadata" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
   </component>
 </module>

@@ -21,11 +21,11 @@ plugins {
 }
 
 android {
-    compileSdkPreview = AppConfig.COMPILE_SDK_VERSION
+    compileSdk = AppConfig.COMPILE_SDK_VERSION
 
     defaultConfig {
         minSdk = AppConfig.MIN_SDK_VERSION
-        targetSdkPreview = AppConfig.TARGET_SDK_VERSION
+        targetSdk = AppConfig.TARGET_SDK_VERSION
         testInstrumentationRunner = "com.mohsents.shared.test.HiltTestRunner"
         buildConfigField(
             "String",

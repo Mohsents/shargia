@@ -14,20 +14,40 @@
  * limitations under the License.
  */
 
+import java.io.FileInputStream
+import java.util.*
+
 plugins {
     kotlin("android")
     kotlin("kapt")
     id("com.android.application")
     id("dagger.hilt.android.plugin")
+    id("com.google.gms.google-services")
+    id("com.google.firebase.crashlytics")
 }
 
+val keystorePropertiesFile = rootProject.file("keystore.properties")
+val keystoreProperties = Properties()
+keystoreProperties.load(FileInputStream(keystorePropertiesFile))
+
 android {
-    compileSdkPreview = AppConfig.COMPILE_SDK_VERSION
+    signingConfigs {
+        create("release") {
+            keyAlias = keystoreProperties["keyAlias"] as String
+            keyPassword = keystoreProperties["keyPassword"] as String
+            storeFile = keystoreProperties["storeFile"]?.let { file(it) }
+            storePassword = keystoreProperties["storePassword"] as String
+            enableV1Signing = true
+            enableV2Signing = true
+        }
+    }
+
+    compileSdk = AppConfig.COMPILE_SDK_VERSION
 
     defaultConfig {
         applicationId = AppConfig.APPLICATION_ID
         minSdk = AppConfig.MIN_SDK_VERSION
-        targetSdkPreview = AppConfig.TARGET_SDK_VERSION
+        targetSdk = AppConfig.TARGET_SDK_VERSION
         versionCode = AppConfig.VERSION_CODE
         versionName = AppConfig.VERSION_NAME
     }
@@ -47,10 +67,13 @@ android {
 
         release {
             isMinifyEnabled = true
+            isShrinkResources = true
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
             )
+
+            signingConfig = signingConfigs.getByName("release")
         }
     }
 
@@ -63,12 +86,17 @@ android {
 
     buildFeatures { compose = true }
 
+    composeOptions { kotlinCompilerExtensionVersion = "1.1.1" }
+
     testOptions.unitTests.isIncludeAndroidResources = true
 }
 
 dependencies {
     implementation(project(":shared"))
     implementation(project(":ui"))
+    releaseImplementation(platform(Dependencies.Libs.FIREBASE_BOM))
+    releaseImplementation(Dependencies.Libs.FIREBASE_ANALYTICS)
+    releaseImplementation(Dependencies.Libs.FIREBASE_CRASHLYTICS)
     implementation(Dependencies.Libs.HILT)
     kapt(Dependencies.Libs.HILT_ANDROID_COMPILER)
 }

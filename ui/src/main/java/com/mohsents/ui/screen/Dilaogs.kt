@@ -14,17 +14,24 @@
  * limitations under the License.
  */
 
+@file:OptIn(ExperimentalMaterial3Api::class)
+
 package com.mohsents.ui.screen
 
-import androidx.compose.material3.AlertDialog
-import androidx.compose.material3.Button
-import androidx.compose.material3.Text
+import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.material3.*
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.semantics.contentDescription
 import androidx.compose.ui.semantics.semantics
+import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
+import androidx.compose.ui.window.Dialog
+import androidx.constraintlayout.compose.ConstraintLayout
 import com.mohsents.ui.R
 
 @Composable
@@ -47,7 +54,7 @@ fun RootNotFoundDialog(
 @Composable
 fun InitializationFailedDialog(
     modifier: Modifier = Modifier,
-    onExit: () -> Unit
+    onExit: () -> Unit,
 ) {
     val context = LocalContext.current
     ErrorDialog(
@@ -75,7 +82,7 @@ fun ErrorDialog(
     modifier: Modifier = Modifier,
     title: String,
     text: String,
-    onExit: () -> Unit
+    onExit: () -> Unit,
 ) {
     AlertDialog(
         modifier = modifier,
@@ -88,4 +95,93 @@ fun ErrorDialog(
         },
         onDismissRequest = onExit,
     )
+}
+
+/**
+ * Opens a dialog with the given content.
+ *
+ * Represents a basic dialog with a title and acton buttons to cancel and confirm.
+ *
+ * @param title Title that placed as the header of the dialog.
+ * @param confirmEnabled Whether the confirm button enabled or not.
+ * @param onDismiss Called when the user clicks on cancel button.
+ * @param onConfirm Called when the user clicks on confirm button.
+ * @param content The content to be displayed inside the dialog.
+ */
+@Composable
+fun DialogPreferencePlaceHolder(
+    title: String,
+    confirmEnabled: Boolean = true,
+    onDismiss: () -> Unit,
+    onConfirm: () -> Unit,
+    content: @Composable ColumnScope.() -> Unit,
+) {
+    Dialog(onDismissRequest = onDismiss) {
+        Surface(
+            shape = RoundedCornerShape(28.dp),
+            color = MaterialTheme.colorScheme.surface
+        ) {
+            val innerPadding = 24.dp
+            Column {
+                Card(
+                    colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.primary),
+                    shape = RoundedCornerShape(0.dp),
+                    modifier = Modifier.fillMaxWidth()
+                ) {
+                    Text(
+                        modifier = Modifier.padding(horizontal = innerPadding, vertical = 15.dp),
+                        text = title,
+                        fontSize = 25.sp,
+                        fontWeight = FontWeight.ExtraBold
+                    )
+                }
+
+                ConstraintLayout(modifier = Modifier.padding(innerPadding)) {
+                    val (contentRef, buttonsRef) = createRefs()
+
+                    Column(Modifier.constrainAs(contentRef) {}) {
+                        content()
+                    }
+
+                    Row(horizontalArrangement = Arrangement.End,
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .constrainAs(buttonsRef) {
+                                top.linkTo(contentRef.bottom, margin = innerPadding)
+                            }
+                    ) {
+                        DialogActionButton(
+                            text = stringResource(id = R.string.cancel_label),
+                            onClick = onDismiss
+                        )
+
+                        DialogActionButton(
+                            text = stringResource(id = R.string.ok_label),
+                            enabled = confirmEnabled,
+                            onClick = onConfirm
+                        )
+                    }
+                }
+            }
+        }
+    }
+}
+
+@Composable
+private fun DialogActionButton(
+    text: String,
+    enabled: Boolean = true,
+    onClick: () -> Unit,
+) {
+    TextButton(
+        modifier = Modifier.padding(end = 8.dp),
+        onClick = onClick,
+        enabled = enabled
+    ) {
+        Text(
+            text = text,
+            style = MaterialTheme.typography.labelLarge,
+            color = MaterialTheme.colorScheme.onSurfaceVariant
+        )
+    }
 }

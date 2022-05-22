@@ -4,11 +4,28 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/Shargia.iml" filepath="$PROJECT_DIR$/.idea/modules/Shargia.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/acc/Shargia.acc.iml" filepath="$PROJECT_DIR$/.idea/modules/acc/Shargia.acc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/acc/Shargia.acc.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/acc/Shargia.acc.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/acc/Shargia.acc.main.iml" filepath="$PROJECT_DIR$/.idea/modules/acc/Shargia.acc.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/acc/Shargia.acc.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/acc/Shargia.acc.unitTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Shargia.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Shargia.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Shargia.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Shargia.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Shargia.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Shargia.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Shargia.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Shargia.app.unitTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/Shargia.buildSrc.iml" filepath="$PROJECT_DIR$/.idea/modules/Shargia.buildSrc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Shargia.buildSrc.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Shargia.buildSrc.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Shargia.buildSrc.test.iml" filepath="$PROJECT_DIR$/.idea/modules/Shargia.buildSrc.test.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/shared/Shargia.shared.iml" filepath="$PROJECT_DIR$/.idea/modules/shared/Shargia.shared.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/shared/Shargia.shared.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/shared/Shargia.shared.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/shared/Shargia.shared.main.iml" filepath="$PROJECT_DIR$/.idea/modules/shared/Shargia.shared.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/shared/Shargia.shared.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/shared/Shargia.shared.unitTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/shell/Shargia.shell.iml" filepath="$PROJECT_DIR$/.idea/modules/shell/Shargia.shell.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/shell/Shargia.shell.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/shell/Shargia.shell.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/shell/Shargia.shell.main.iml" filepath="$PROJECT_DIR$/.idea/modules/shell/Shargia.shell.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/shell/Shargia.shell.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/shell/Shargia.shell.unitTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/ui/Shargia.ui.iml" filepath="$PROJECT_DIR$/.idea/modules/ui/Shargia.ui.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ui/Shargia.ui.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/ui/Shargia.ui.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ui/Shargia.ui.main.iml" filepath="$PROJECT_DIR$/.idea/modules/ui/Shargia.ui.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ui/Shargia.ui.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/ui/Shargia.ui.unitTest.iml" />
     </modules>
   </component>
 </project>

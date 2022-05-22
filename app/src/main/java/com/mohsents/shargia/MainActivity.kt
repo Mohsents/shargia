@@ -16,23 +16,36 @@
 
 package com.mohsents.shargia
 
+import android.os.Build
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.addCallback
 import androidx.activity.compose.setContent
 import androidx.activity.viewModels
+import androidx.core.app.NotificationCompat
+import androidx.core.app.NotificationManagerCompat
 import androidx.lifecycle.lifecycleScope
+import com.mohsents.shared.util.NotificationUtils
+import com.mohsents.ui.R
 import com.mohsents.ui.screen.LoadingScreen
 import com.mohsents.ui.screen.ShargiaApp
 import com.mohsents.ui.theme.ShargiaTheme
 import com.mohsents.ui.viewmodel.ViewModel
+import com.mohsents.ui.worker.ServiceWorker
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.launch
+import javax.inject.Inject
 
 @AndroidEntryPoint
 class MainActivity : ComponentActivity() {
 
     private val viewModel: ViewModel by viewModels()
+
+    @Inject
+    lateinit var notificationUtils: NotificationUtils
+
+    @Inject
+    lateinit var serviceWorker: ServiceWorker
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -56,6 +69,17 @@ class MainActivity : ComponentActivity() {
         onBackPressedDispatcher.addCallback {
             // Explicitly finish the Activity, So after re-launch screen state will be updated.
             finish()
+        }
+
+        serviceWorker.start()
+
+        notificationUtils.createChannel(
+            channelId = resources.getString(R.string.service_notification_channel_id),
+            channelName = resources.getString(R.string.service_notification_channel_name),
+            importance = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N)
+                NotificationManagerCompat.IMPORTANCE_HIGH else 0
+        ) {
+            lockscreenVisibility = NotificationCompat.VISIBILITY_PUBLIC
         }
     }
 }

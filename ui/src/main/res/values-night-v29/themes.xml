@@ -17,6 +17,9 @@
 <resources>
 
     <style name="AppTheme" parent="BaseAppTheme">
+        <!-- Applying Dark background for status bar -->
+        <item name="android:statusBarColor">?android:colorBackground</item>
+        <item name="android:windowLightStatusBar">false</item>
         <!-- Applying edge-to-edge theme for api v29 and above only. -->
         <item name="android:navigationBarColor">@android:color/transparent</item>
     </style>

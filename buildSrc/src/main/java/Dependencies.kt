@@ -23,6 +23,8 @@ object Dependencies {
         const val AGP = "com.android.tools.build:gradle:${Versions.AGP}"
         const val KOTLIN = "org.jetbrains.kotlin:kotlin-gradle-plugin:${Versions.KOTLIN}"
         const val HILT = "com.google.dagger:hilt-android-gradle-plugin:${Versions.HILT}"
+        const val GMS = "com.google.gms:google-services:${Versions.GMS}"
+        const val FIREBASE_CRASHLYTICS = "com.google.firebase:firebase-crashlytics-gradle:${Versions.FIREBASE_CRASHLYTICS}"
     }
 
     object Libs {
@@ -44,18 +46,25 @@ object Dependencies {
         const val COMPOSE_FOUNDATION = "androidx.compose.foundation:foundation:${Versions.COMPOSE}"
         const val COMPOSE_MATERIAL3 =
             "androidx.compose.material3:material3:${Versions.COMPOSE_MATERIAL3}"
-        const val COMPOSE_MATERIAL_ICONS =
-            "androidx.compose.material:material-icons-core:${Versions.COMPOSE}"
         const val COMPOSE_CONSTRAINT_LAYOUT =
             "androidx.constraintlayout:constraintlayout-compose:${Versions.COMPOSE_CONSTRAINT_LAYOUT}"
         const val COMPOSE_ACTIVITY =
             "androidx.activity:activity-compose:${Versions.COMPOSE_ACTIVITY}"
-        const val COMPOSE_VIEWMODEL =
-            "androidx.lifecycle:lifecycle-viewmodel-compose:${Versions.ARCH}"
-
-        // Test
+        const val CUSTOM_VIEW =
+            "androidx.customview:customview:${Versions.CUSTOM_VIEW}"
+        const val CUSTOM_VIEW_POOLING_ADAPTER =
+            "androidx.customview:customview-poolingcontainer:${Versions.CUSTOM_VIEW_POOLING_ADAPTER}"
         const val HILT = "com.google.dagger:hilt-android:${Versions.HILT}"
         const val HILT_ANDROID_COMPILER = "com.google.dagger:hilt-android-compiler:${Versions.HILT}"
+        const val HILT_WORK_MANAGER = "androidx.hilt:hilt-work:${Versions.HILT_WORK_MANAGER}"
+        const val HILT_COMPILER = "androidx.hilt:hilt-compiler:${Versions.HILT_COMPILER}"
+        const val WORK_MANAGER_RUNTIME = "androidx.work:work-runtime-ktx:${Versions.WORK_MANAGER}"
+        const val FIREBASE_BOM = "com.google.firebase:firebase-bom:${Versions.FIREBASE}"
+        // No need to specify version when declare firebase bom.
+        const val FIREBASE_CRASHLYTICS = "com.google.firebase:firebase-crashlytics-ktx"
+        const val FIREBASE_ANALYTICS = "com.google.firebase:firebase-analytics-ktx"
+
+        // Test
         const val HILT_ANDROID_TESTING = "com.google.dagger:hilt-android-testing:${Versions.HILT}"
         const val JUNIT = "junit:junit:${Versions.JUNIT}"
         const val ANDROIDX_JUNIT = "androidx.test.ext:junit-ktx:${Versions.ANDROIDX_JUNIT}"

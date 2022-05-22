@@ -40,6 +40,9 @@ val currentRange = IntRange(0, 9999)
 const val DEFAULT_VOLT = 3920
 const val DEFAULT_CURRENT = 500
 
+const val DEFAULT_START_CHARGING = 25
+const val DEFAULT_STOP_CHARGING = 85
+
 const val DEFAULT_BATTERY_INFO_VALUE = "N/A"
 const val CAPACITY_PATTERN = """^\s*CAPACITY=(\d+)"""
 const val UNKNOWN = "Unknown"

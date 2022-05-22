@@ -19,9 +19,10 @@ package com.mohsents.ui.viewmodel
 import androidx.compose.runtime.MutableState
 import androidx.compose.runtime.State
 import androidx.compose.runtime.mutableStateOf
-import com.mohsents.ui.fakeBatteryInfo
+import com.mohsents.ui.pref.UiPreference
 import com.mohsents.ui.screen.ScreenState
 import com.mohsents.ui.screen.UiState
+import com.mohsents.ui.utils.fakeBatteryInfo
 
 /**
  * Fake implementation of [MainViewModel] that used in compose previews and ui tests.
@@ -37,7 +38,27 @@ object FakeViewViewModel : MainViewModel {
         _uiState.value = uiState
     }
 
-    override fun updateUiState() {}
+    override suspend fun updateUiState() {}
+
+    override val uiPreferenceState: State<UiPreference> = mutableStateOf(UiPreference())
+
+    override suspend fun updateUiPreferenceState() {}
+
+    override fun enableService(enable: Boolean) {}
+
+    override fun enableLimitChargingPower(enable: Boolean) {}
+
+    override fun enableChargingPower(enable: Boolean) {}
+
+    override fun setChargingVoltage(voltage: Int) {}
+
+    override fun setChargingCurrent(current: Int) {}
+
+    override fun enableStartStopCharging(enable: Boolean) {}
+
+    override fun setStartCharging(startAt: Int) {}
+
+    override fun setStopCharging(stopAt: Int) {}
 
     override suspend fun getScreenState(): ScreenState = ScreenState.MAIN_SCREEN
 }

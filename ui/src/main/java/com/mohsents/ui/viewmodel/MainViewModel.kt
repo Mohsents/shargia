@@ -17,15 +17,22 @@
 package com.mohsents.ui.viewmodel
 
 import androidx.compose.runtime.State
+import com.mohsents.ui.pref.UiPreference
 import com.mohsents.ui.screen.ScreenState
 import com.mohsents.ui.screen.UiState
 
-/**
- * Base contract for ViewModel.
- */
 interface MainViewModel {
     suspend fun getScreenState(): ScreenState
     val uiState: State<UiState>
-    fun updateUiState()
-    suspend fun getScreenState(): ScreenState
+    suspend fun updateUiState()
+    val uiPreferenceState: State<UiPreference>
+    suspend fun updateUiPreferenceState()
+    fun enableService(enable: Boolean)
+    fun enableLimitChargingPower(enable: Boolean)
+    fun enableChargingPower(enable: Boolean)
+    fun setChargingVoltage(voltage: Int)
+    fun setChargingCurrent(current: Int)
+    fun enableStartStopCharging(enable: Boolean)
+    fun setStartCharging(startAt: Int)
+    fun setStopCharging(stopAt: Int)
 }
