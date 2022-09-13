@@ -59,6 +59,8 @@
         <entry key="../../../../../layout/custom_preview.xml" value="0.28615384615384615" />
         <entry key="app/src/main/res/drawable/ic_launcher_foreground.xml" value="0.112" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.13055555555555556" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1225" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.1225" />
         <entry key="ui/src/main/res/drawable-night/switch_thumb.xml" value="0.1175" />
         <entry key="ui/src/main/res/drawable-night/switch_track.xml" value="0.1175" />
         <entry key="ui/src/main/res/drawable/ic_baseline_error_outline_24.xml" value="0.1355" />
