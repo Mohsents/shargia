@@ -16,11 +16,13 @@
 
 package com.mohsents.shargia
 
+import android.Manifest
 import android.os.Build
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.addCallback
 import androidx.activity.compose.setContent
+import androidx.activity.result.contract.ActivityResultContracts
 import androidx.activity.viewModels
 import androidx.core.app.NotificationCompat
 import androidx.core.app.NotificationManagerCompat
@@ -40,6 +42,8 @@ import javax.inject.Inject
 class MainActivity : ComponentActivity() {
 
     private val viewModel: ViewModel by viewModels()
+    private val permissionLauncher =
+        registerForActivityResult(ActivityResultContracts.RequestPermission()) {}
 
     @Inject
     lateinit var notificationUtils: NotificationUtils
@@ -72,6 +76,10 @@ class MainActivity : ComponentActivity() {
         }
 
         serviceWorker.start()
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
+            permissionLauncher.launch(Manifest.permission.POST_NOTIFICATIONS)
+        }
 
         notificationUtils.createChannel(
             channelId = resources.getString(R.string.service_notification_channel_id),
