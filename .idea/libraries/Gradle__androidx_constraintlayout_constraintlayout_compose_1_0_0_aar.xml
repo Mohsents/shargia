@@ -16,9 +16,15 @@
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/f4364d91ea9bbf073f60a3f44f53087f/transformed/jetified-constraintlayout-compose-1.0.0/res" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/b1509e5bda9893978f3d041a079cc187/transformed/jetified-constraintlayout-compose-1.0.0/res" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/969812b750876dcea1b12586510aa505/transformed/jetified-constraintlayout-compose-1.0.0/res" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/7bd1114ca1f307167eee2bcc074c5e8f/transformed/constraintlayout-compose-1.0.0/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/7bd1114ca1f307167eee2bcc074c5e8f/transformed/constraintlayout-compose-1.0.0/AndroidManifest.xml" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/7bd1114ca1f307167eee2bcc074c5e8f/transformed/constraintlayout-compose-1.0.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/e072e71226b58ca7d941cc07bdbd9a23/transformed/constraintlayout-compose-1.0.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/52f253a7da136592f5e7ee9e26046fa8/transformed/constraintlayout-compose-1.0.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/03182bc18933cdacdc123ec847d8a08b/transformed/constraintlayout-compose-1.0.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/59db5b16738804d7fdb303566dbea02a/transformed/constraintlayout-compose-1.0.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/0c5b71cdcd73911797f19d3d8cbcfb38/transformed/constraintlayout-compose-1.0.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/cb9b182f48840366e032d01829f4d384/transformed/constraintlayout-compose-1.0.0/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/cb9b182f48840366e032d01829f4d384/transformed/constraintlayout-compose-1.0.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/cb9b182f48840366e032d01829f4d384/transformed/constraintlayout-compose-1.0.0/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

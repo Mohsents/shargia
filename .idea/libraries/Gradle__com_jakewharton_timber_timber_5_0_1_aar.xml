@@ -16,9 +16,15 @@
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/1f25fb896cd9dd5b81984ebb8db5fc1d/transformed/jetified-timber-5.0.1/res" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/6496ec96e29b521525d099d1cb90c861/transformed/jetified-timber-5.0.1/res" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/d8b5c8553a436a139bf98ec534784e94/transformed/jetified-timber-5.0.1/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/c42c554442474b281ac5204696194c9e/transformed/timber-5.0.1/AndroidManifest.xml" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/c42c554442474b281ac5204696194c9e/transformed/timber-5.0.1/res" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/c42c554442474b281ac5204696194c9e/transformed/timber-5.0.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/d86b969aabae16cd07f9a34dffa7c3c6/transformed/timber-5.0.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/fc03df31998320ac65197224ab382493/transformed/timber-5.0.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/b8d677011bfc8017bfa1694bf73066e8/transformed/timber-5.0.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/02ab9854e046a7a3161228c9733fdabb/transformed/timber-5.0.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/1156c4fed4065791e21ee7e6f6c970f5/transformed/timber-5.0.1/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/782f5cea0dd81f070ee56160dac303c4/transformed/timber-5.0.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/782f5cea0dd81f070ee56160dac303c4/transformed/timber-5.0.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/782f5cea0dd81f070ee56160dac303c4/transformed/timber-5.0.1/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.jakewharton.timber/timber/5.0.1/264c7cc6aa44f3b596075cbb19b2712f364d4c7e/timber-5.0.1-javadoc.jar!/" />

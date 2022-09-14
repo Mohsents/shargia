@@ -51,7 +51,7 @@ android {
 
     buildFeatures { compose = true }
 
-    composeOptions { kotlinCompilerExtensionVersion = "1.1.1" }
+    composeOptions { kotlinCompilerExtensionVersion = "1.3.1" }
 
     packagingOptions {
         resources.excludes.apply {
@@ -72,6 +72,7 @@ dependencies {
     implementation(Dependencies.Libs.MATERIAL)
     implementation(Dependencies.Libs.CORE_KTX)
     implementation(Dependencies.Libs.LIFECYCLE)
+    implementation(Dependencies.Libs.VIEW_MODEL)
     implementation(Dependencies.Libs.COMPOSE_UI)
     implementation(Dependencies.Libs.COMPOSE_MATERIAL3)
     implementation(Dependencies.Libs.COMPOSE_FOUNDATION)

@@ -16,9 +16,15 @@
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/2d6eba009df6dcb8a02e6627215c2766/transformed/jetified-core-1.4.0/res" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/28113d08cc92398092ea49aa26803008/transformed/jetified-core-1.4.0/res" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/9d0aea9a81441717efb69bf018afe101/transformed/jetified-core-1.4.0/res" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/2f62b8cda012842b7801ef8f8b42307d/transformed/core-1.4.0/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/2f62b8cda012842b7801ef8f8b42307d/transformed/core-1.4.0/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/2f62b8cda012842b7801ef8f8b42307d/transformed/core-1.4.0/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/964979c8cdda8c08890878af0f29ad2d/transformed/core-1.4.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/04e151867ed538c646626ab16874f9b1/transformed/core-1.4.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/aad4c994d0d9e6717c1590b60b3cf98a/transformed/core-1.4.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/02b7f4e5d254cb6e5aa3ca8be8ee2c3f/transformed/core-1.4.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/7a36721306ff085995c1694b8318778d/transformed/core-1.4.0/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/fcfcdd85cfa9a54fc8228cb5a411b483/transformed/core-1.4.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/fcfcdd85cfa9a54fc8228cb5a411b483/transformed/core-1.4.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/fcfcdd85cfa9a54fc8228cb5a411b483/transformed/core-1.4.0/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.test/core/1.4.0/96b4d161def059d92989a352500d05d215c33d5e/core-1.4.0-javadoc.jar!/" />

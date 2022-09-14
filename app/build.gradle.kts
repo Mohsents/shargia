@@ -86,7 +86,7 @@ android {
 
     buildFeatures { compose = true }
 
-    composeOptions { kotlinCompilerExtensionVersion = "1.1.1" }
+    composeOptions { kotlinCompilerExtensionVersion = "1.3.1" }
 
     testOptions.unitTests.isIncludeAndroidResources = true
 }

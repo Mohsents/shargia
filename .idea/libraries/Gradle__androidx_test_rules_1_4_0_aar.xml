@@ -15,9 +15,15 @@
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/5aae4aeef037176d13d20b68dd3eca2e/transformed/rules-1.4.0/res" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/982e38327cf088106333af043ac922e5/transformed/rules-1.4.0/res" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/19a553920da99b4eb11a52cebfc5f157/transformed/rules-1.4.0/res" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/8a6ebf5f647e047e513959cae9c3cfb7/transformed/rules-1.4.0/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/8a6ebf5f647e047e513959cae9c3cfb7/transformed/rules-1.4.0/AndroidManifest.xml" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/8a6ebf5f647e047e513959cae9c3cfb7/transformed/rules-1.4.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/235a6da78e414c984e82970059f72f71/transformed/rules-1.4.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/8df3e882ea42970ff02d5a9f013fc5b2/transformed/rules-1.4.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/af1c17f2d65abc85a2597845160f05be/transformed/rules-1.4.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/fa781e16c55455a135d342d5ef0fc68f/transformed/rules-1.4.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/a6c4b2d6b0e52b05a2a08d616d0af8b1/transformed/rules-1.4.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/26ccfaa419c22325390e3c2b73db862d/transformed/rules-1.4.0/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/26ccfaa419c22325390e3c2b73db862d/transformed/rules-1.4.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/26ccfaa419c22325390e3c2b73db862d/transformed/rules-1.4.0/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.test/rules/1.4.0/326d97acb2a9cf7cbff243e63d1d45fa354b8ec7/rules-1.4.0-javadoc.jar!/" />

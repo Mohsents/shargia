@@ -14,8 +14,6 @@
  * limitations under the License.
  */
 
-import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
-
 buildscript {
     repositories {
         google()
@@ -35,13 +33,6 @@ allprojects {
         google()
         mavenCentral()
         maven { setUrl("https://jitpack.io") }
-    }
-}
-
-subprojects {
-    tasks.withType<KotlinCompile>().configureEach {
-        kotlinOptions.freeCompilerArgs +=
-            "-Xuse-experimental=kotlinx.coroutines.ExperimentalCoroutinesApi"
     }
 }
 

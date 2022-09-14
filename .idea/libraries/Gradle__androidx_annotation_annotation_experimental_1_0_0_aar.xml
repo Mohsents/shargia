@@ -16,9 +16,15 @@
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/d5c321d574dd8c8203b014ed5fbce807/transformed/jetified-annotation-experimental-1.0.0/res" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/5a934869a6dbebc9ffed24dc27fb1f7d/transformed/jetified-annotation-experimental-1.0.0/res" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/87ddd5d7a1ef8d8cb2a32bfd6d0b150a/transformed/jetified-annotation-experimental-1.0.0/res" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/feb7285ed10dba3174b454bd3a35c141/transformed/annotation-experimental-1.0.0/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/feb7285ed10dba3174b454bd3a35c141/transformed/annotation-experimental-1.0.0/AndroidManifest.xml" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/feb7285ed10dba3174b454bd3a35c141/transformed/annotation-experimental-1.0.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/d11ca70319ef8946388bc263742ab0ff/transformed/annotation-experimental-1.0.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/38105e44ab1c08c31faee869d2aca2b1/transformed/annotation-experimental-1.0.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/ee54ef6c94dbea6e9101061cc856ab36/transformed/annotation-experimental-1.0.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/06436dda0c3257e568b474e0a8d2e541/transformed/annotation-experimental-1.0.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/81c3e5b3a3281d7e60eeecaa15499933/transformed/annotation-experimental-1.0.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/cdb87ddc9cc86988c26520ad39306608/transformed/annotation-experimental-1.0.0/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/cdb87ddc9cc86988c26520ad39306608/transformed/annotation-experimental-1.0.0/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/cdb87ddc9cc86988c26520ad39306608/transformed/annotation-experimental-1.0.0/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
