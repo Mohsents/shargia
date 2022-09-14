@@ -174,5 +174,4 @@
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.constraintlayout:constraintlayout-compose:1.0.0@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.work:work-runtime-ktx:2.7.1@aar" level="project" />
   </component>
-  <component name="TestModuleProperties" production-module="Shargia.ui.main" />
 </module>
