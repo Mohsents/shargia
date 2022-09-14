@@ -71,5 +71,4 @@
     <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm:1.6.0" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: com.github.topjohnwu.libsu:core:3.2.1@aar" level="project" />
   </component>
-  <component name="TestModuleProperties" production-module="Shargia.shell.main" />
 </module>

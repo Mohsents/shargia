@@ -126,5 +126,4 @@
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.annotation:annotation-experimental:1.0.0@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: com.github.topjohnwu.libsu:core:3.2.1@aar" level="project" />
   </component>
-  <component name="TestModuleProperties" production-module="Shargia.acc.main" />
 </module>
