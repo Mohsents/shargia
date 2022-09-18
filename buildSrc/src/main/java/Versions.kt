@@ -39,6 +39,7 @@ internal object Versions {
     const val COMPOSE_ACTIVITY = "1.4.0"
     const val COMPOSE_CONSTRAINT_LAYOUT = "1.0.0"
     const val ARCH = "2.5.1"
+    const val LIFECYCLE = "2.5.1"
     const val CUSTOM_VIEW = "1.2.0-alpha01"
     const val CUSTOM_VIEW_POOLING_ADAPTER = "1.0.0-alpha01"
     const val HILT = "2.42"

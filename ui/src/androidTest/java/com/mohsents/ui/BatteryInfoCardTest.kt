@@ -23,7 +23,7 @@ import androidx.compose.ui.test.onNodeWithText
 import com.mohsents.ui.screen.BatteryInfoCard
 import com.mohsents.ui.screen.LOADING_SCREEN_TEST_TAG
 import com.mohsents.ui.screen.UiState
-import com.mohsents.ui.viewmodel.FakeViewViewModel
+import com.mohsents.ui.utils.fakeBatteryInfo
 import org.junit.Rule
 import org.junit.Test
 
@@ -34,18 +34,16 @@ class BatteryInfoCardTest {
 
     @Test
     fun batteryInfoCard_loadingStateTest() {
-        FakeViewViewModel.updateUiState(UiState(isLodging = true, isError = false))
         composeRule.setContent {
-            BatteryInfoCard(viewModel = FakeViewViewModel)
+            BatteryInfoCard(UiState(isLodging = true, isError = false)) {}
         }
         composeRule.onNodeWithTag(LOADING_SCREEN_TEST_TAG).assertIsDisplayed()
     }
 
     @Test
     fun batteryInfoCard_ErrorStateTest() {
-        FakeViewViewModel.updateUiState(UiState(isLodging = false, isError = true))
         composeRule.setContent {
-            BatteryInfoCard(viewModel = FakeViewViewModel)
+            BatteryInfoCard(UiState(isLodging = false, isError = true)) {}
         }
         composeRule
             .onNodeWithText(getStringById(R.string.error_screen_text_label))
@@ -54,11 +52,16 @@ class BatteryInfoCardTest {
 
     @Test
     fun batteryInfoCard_verify_properties() {
-        FakeViewViewModel.updateUiState(UiState(isLodging = false))
         composeRule.setContent {
-            BatteryInfoCard(viewModel = FakeViewViewModel)
+            BatteryInfoCard(
+                UiState(
+                    isLodging = false,
+                    isError = false,
+                    batteryInfo = fakeBatteryInfo
+                )
+            ) {}
         }
-        val batteryInfo = FakeViewViewModel.uiState.value.batteryInfo
+        val batteryInfo = fakeBatteryInfo
         composeRule.run {
             onNodeWithText("${getStringById(R.string.battery_info_status_label)}: ${batteryInfo.status}")
             onNodeWithText("${getStringById(R.string.battery_info_temp_label)}: ${batteryInfo.temp}")

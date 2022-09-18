@@ -78,6 +78,7 @@ dependencies {
     implementation(Dependencies.Libs.COMPOSE_FOUNDATION)
     implementation(Dependencies.Libs.COMPOSE_TOOLING_PREVIEW)
     implementation(Dependencies.Libs.COMPOSE_CONSTRAINT_LAYOUT)
+    implementation(Dependencies.Libs.COMPOSE_VIEW_MODEL)
     implementation(Dependencies.Libs.HILT)
     implementation(Dependencies.Libs.WORK_MANAGER_RUNTIME)
     kapt(Dependencies.Libs.HILT_COMPILER)

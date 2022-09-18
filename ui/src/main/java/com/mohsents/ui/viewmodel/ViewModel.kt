@@ -39,13 +39,13 @@ import javax.inject.Inject
 class ViewModel @Inject constructor(
     private val acc: Acc,
     private val userPreference: UserPreference
-) : ViewModel(), MainViewModel {
+) : ViewModel() {
 
     private val _uiState: MutableState<UiState> = mutableStateOf(UiState())
-    override val uiState: State<UiState> = _uiState
+    val uiState: State<UiState> = _uiState
 
     private val _uiPreferenceState: MutableState<UiPreference> = mutableStateOf(UiPreference())
-    override val uiPreferenceState: State<UiPreference> = _uiPreferenceState
+    val uiPreferenceState: State<UiPreference> = _uiPreferenceState
 
     init {
         viewModelScope.launch {
@@ -53,7 +53,8 @@ class ViewModel @Inject constructor(
         }
     }
 
-    override suspend fun updateUiState() {
+
+    suspend fun updateUiState() {
         while (true) {
             delay(DELAY_UPDATE_BATTERY_INFO)
             acc.getBatteryInfo().onSuccess { batteryInfo ->
@@ -66,13 +67,14 @@ class ViewModel @Inject constructor(
         }
     }
 
-    override suspend fun getScreenState(): ScreenState = when {
+    suspend fun getScreenState(): ScreenState = when {
         !RootHandler.isShellRooted() -> ScreenState.NO_ROOT
         acc.init().isFailure -> ScreenState.INITIALIZATION_FAILED
         else -> ScreenState.MAIN_SCREEN
     }
 
-    override fun enableService(enable: Boolean) {
+
+    fun enableService(enable: Boolean) {
         updatePreference(UserPreferenceImpl.SERVICE_KEY, enable)
 
         viewModelScope.launch {
@@ -85,7 +87,7 @@ class ViewModel @Inject constructor(
         }
     }
 
-    override fun enableLimitChargingPower(enable: Boolean) {
+    fun enableLimitChargingPower(enable: Boolean) {
         updatePreference(UserPreferenceImpl.LIMIT_CHARGING_POWER_KEY, enable)
         viewModelScope.launch {
             if (enable) {
@@ -96,7 +98,7 @@ class ViewModel @Inject constructor(
         }
     }
 
-    override fun enableChargingPower(enable: Boolean) {
+    fun enableChargingPower(enable: Boolean) {
         updatePreference(UserPreferenceImpl.CHARGING_POWER_KEY, enable)
         viewModelScope.launch {
             if (enable) {
@@ -110,21 +112,21 @@ class ViewModel @Inject constructor(
         }
     }
 
-    override fun setChargingVoltage(voltage: Int) {
+    fun setChargingVoltage(voltage: Int) {
         updatePreference(UserPreferenceImpl.CHARGING_VOLTAGE_KEY, voltage)
         viewModelScope.launch {
             acc.setChargingVoltage(voltage)
         }
     }
 
-    override fun setChargingCurrent(current: Int) {
+    fun setChargingCurrent(current: Int) {
         updatePreference(UserPreferenceImpl.CHARGING_CURRENT_KEY, current)
         viewModelScope.launch {
             acc.setChargingCurrent(current)
         }
     }
 
-    override fun enableStartStopCharging(enable: Boolean) {
+    fun enableStartStopCharging(enable: Boolean) {
         updatePreference(UserPreferenceImpl.START_STOP_CHARGING_KEY, enable)
         viewModelScope.launch {
             if (enable) {
@@ -138,21 +140,21 @@ class ViewModel @Inject constructor(
         }
     }
 
-    override fun setStartCharging(startAt: Int) {
+    fun setStartCharging(startAt: Int) {
         updatePreference(UserPreferenceImpl.START_CHARGING, startAt)
         viewModelScope.launch {
             acc.setStartCharging(startAt)
         }
     }
 
-    override fun setStopCharging(stopAt: Int) {
+    fun setStopCharging(stopAt: Int) {
         updatePreference(UserPreferenceImpl.STOP_CHARGING, stopAt)
         viewModelScope.launch {
             acc.setStopCharging(stopAt)
         }
     }
 
-    override suspend fun updateUiPreferenceState() {
+    suspend fun updateUiPreferenceState() {
         _uiPreferenceState.value = userPreference.getUiPreference()
     }
 

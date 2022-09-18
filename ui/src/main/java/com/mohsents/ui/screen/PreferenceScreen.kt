@@ -24,24 +24,34 @@ import androidx.compose.ui.unit.dp
 import com.mohsents.acc.util.currentRange
 import com.mohsents.acc.util.voltRange
 import com.mohsents.ui.R
+import com.mohsents.ui.pref.UiPreference
 import com.mohsents.ui.utils.VerticalSpace
 import com.mohsents.ui.utils.length
 import com.mohsents.ui.utils.localize
-import com.mohsents.ui.viewmodel.MainViewModel
 
 @Composable
-fun PreferenceScreen(viewModel: MainViewModel) {
+fun PreferenceScreen(
+    uiPreference: UiPreference,
+    onServiceEnable: (Boolean) -> Unit,
+    onLimitChargingPowerEnabled: (Boolean) -> Unit,
+    onChargingPowerEnabled: (Boolean) -> Unit,
+    chargingVoltage: (Int) -> Unit,
+    chargingCurrent: (Int) -> Unit,
+    onStartStopChargingEnabled: (Boolean) -> Unit,
+    startCharging: (Int) -> Unit,
+    stopCharging: (Int) -> Unit,
+) {
     val (
         service,
         limitChargingPower,
         chargingPower,
         startStopCharring,
-    ) = viewModel.uiPreferenceState.value
+    ) = uiPreference
 
     CategorySwitchPreference(
         title = stringResource(id = R.string.enable_service_text_label),
         checked = service,
-        onCheckedChange = viewModel::enableService
+        onCheckedChange = onServiceEnable
     )
 
     VerticalSpace(value = 10.dp)
@@ -51,14 +61,14 @@ fun PreferenceScreen(viewModel: MainViewModel) {
         summary = stringResource(id = R.string.enable_limit_charging_power_summary_label),
         checked = limitChargingPower,
         enabled = service && !chargingPower.checked,
-        onCheckedChange = viewModel::enableLimitChargingPower
+        onCheckedChange = onLimitChargingPowerEnabled
     )
 
     SwitchPreference(
         title = stringResource(id = R.string.enable_set_charging_power_text_label),
         checked = chargingPower.checked,
         enabled = service && !limitChargingPower,
-        onCheckedChange = viewModel::enableChargingPower,
+        onCheckedChange = onChargingPowerEnabled,
         content = {
             EditTextPreference(
                 title = stringResource(id = R.string.setting_set_charging_voltage_text_label),
@@ -69,7 +79,7 @@ fun PreferenceScreen(viewModel: MainViewModel) {
                 keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Number),
                 isError = { text -> text.toInt() !in voltRange },
                 errorText = stringResource(id = R.string.setting_set_charging_voltage_error_label),
-                onEditSummery = { newVoltage -> viewModel.setChargingVoltage(newVoltage.toInt()) })
+                onEditSummery = { newVoltage -> chargingVoltage(newVoltage.toInt()) })
 
             EditTextPreference(
                 title = stringResource(id = R.string.setting_set_charging_current_text_label),
@@ -80,14 +90,14 @@ fun PreferenceScreen(viewModel: MainViewModel) {
                 keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Number),
                 isError = { text -> text.toInt() !in currentRange },
                 errorText = stringResource(id = R.string.setting_set_charging_current_error_label),
-                onEditSummery = { newCurrent -> viewModel.setChargingCurrent(newCurrent.toInt()) })
+                onEditSummery = { newCurrent -> chargingCurrent(newCurrent.toInt()) })
         })
 
     SwitchPreference(
         title = stringResource(id = R.string.enable_set_start_stop_charging_text_label),
         checked = startStopCharring.checked,
         enabled = service,
-        onCheckedChange = viewModel::enableStartStopCharging,
+        onCheckedChange = onStartStopChargingEnabled,
         content = {
             NumberPickerPreference(
                 title = stringResource(id = R.string.setting_set_start_charging_text_label),
@@ -97,7 +107,7 @@ fun PreferenceScreen(viewModel: MainViewModel) {
                 minValue = 0,
                 maxValue = 100,
                 defaultValue = startStopCharring.start,
-                onSelectValue = { startAt -> viewModel.setStartCharging(startAt) }
+                onSelectValue = { startAt -> startCharging(startAt) }
             )
 
             NumberPickerPreference(
@@ -108,7 +118,7 @@ fun PreferenceScreen(viewModel: MainViewModel) {
                 minValue = 0,
                 maxValue = 100,
                 defaultValue = startStopCharring.stop,
-                onSelectValue = { stopAt -> viewModel.setStopCharging(stopAt) }
+                onSelectValue = { stopAt -> stopCharging(stopAt) }
             )
         })
 }
