@@ -18,18 +18,15 @@ package com.mohsents.ui.screen
 
 import androidx.compose.runtime.Composable
 import com.mohsents.ui.theme.ShargiaTheme
-import com.mohsents.ui.viewmodel.MainViewModel
 
 /**
  * Start point of the app.
  *
- * @param viewModel Main viewModel of the app.
  * @param screenState (State) current state of the screen that must be show.
  * @param onExit Will be called when request for exit receives from dialogs.
  */
 @Composable
 fun ShargiaApp(
-    viewModel: MainViewModel,
     screenState: ScreenState,
     onExit: () -> Unit = {}
 ) {
@@ -37,7 +34,7 @@ fun ShargiaApp(
         when (screenState) {
             ScreenState.NO_ROOT -> RootNotFoundDialog(onExit = { onExit() })
             ScreenState.INITIALIZATION_FAILED -> InitializationFailedDialog(onExit = { onExit() })
-            ScreenState.MAIN_SCREEN -> MainScreen(viewModel)
+            ScreenState.MAIN_SCREEN -> MainScreen()
         }
     }
 }

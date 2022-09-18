@@ -47,15 +47,17 @@ import com.mohsents.ui.utils.LaunchWhenResumed
 import com.mohsents.ui.utils.fakeBatteryInfo
 import com.mohsents.ui.utils.isInLandscape
 import com.mohsents.ui.utils.localize
-import com.mohsents.ui.viewmodel.MainViewModel
 
 @Composable
-fun BatteryInfoCard(viewModel: MainViewModel) {
+fun BatteryInfoCard(
+    uiState: UiState,
+    refresh: suspend () -> Unit,
+) {
     LaunchWhenResumed {
-        viewModel.updateUiState()
+        refresh()
     }
 
-    val (isLoading, isError, batteryInfo) = viewModel.uiState.value
+    val (isLoading, isError, batteryInfo) = uiState
     when {
         isLoading -> LoadingScreen()
         isError -> ErrorScreen()

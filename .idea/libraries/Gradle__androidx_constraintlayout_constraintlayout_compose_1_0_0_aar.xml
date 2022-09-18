@@ -23,8 +23,12 @@
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/59db5b16738804d7fdb303566dbea02a/transformed/constraintlayout-compose-1.0.0/res" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/0c5b71cdcd73911797f19d3d8cbcfb38/transformed/constraintlayout-compose-1.0.0/res" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/cb9b182f48840366e032d01829f4d384/transformed/constraintlayout-compose-1.0.0/res" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/cb9b182f48840366e032d01829f4d384/transformed/constraintlayout-compose-1.0.0/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/cb9b182f48840366e032d01829f4d384/transformed/constraintlayout-compose-1.0.0/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/183ecce42653dac47159644e8304e9c6/transformed/constraintlayout-compose-1.0.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/42451f6d915535c26298f12e3ff67fae/transformed/constraintlayout-compose-1.0.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/c170d1ed86e1fe475b0e5261ab88a833/transformed/constraintlayout-compose-1.0.0/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/59940b8a8609806e952c379a10953110/transformed/constraintlayout-compose-1.0.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/59940b8a8609806e952c379a10953110/transformed/constraintlayout-compose-1.0.0/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/59940b8a8609806e952c379a10953110/transformed/constraintlayout-compose-1.0.0/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

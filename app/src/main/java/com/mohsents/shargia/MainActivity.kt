@@ -63,10 +63,7 @@ class MainActivity : ComponentActivity() {
         lifecycleScope.launch {
             val screenState = viewModel.getScreenState()
             setContent {
-                ShargiaApp(
-                    viewModel = viewModel,
-                    screenState = screenState
-                ) { finish() }
+                ShargiaApp(screenState = screenState) { finish() }
             }
         }
 

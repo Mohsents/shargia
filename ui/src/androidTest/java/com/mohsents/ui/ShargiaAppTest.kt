@@ -18,10 +18,8 @@ package com.mohsents.ui
 
 import androidx.compose.ui.test.assertIsDisplayed
 import androidx.compose.ui.test.junit4.createComposeRule
-import androidx.compose.ui.test.onNodeWithText
 import com.mohsents.ui.screen.ScreenState
 import com.mohsents.ui.screen.ShargiaApp
-import com.mohsents.ui.viewmodel.FakeViewViewModel
 import org.junit.Rule
 import org.junit.Test
 
@@ -33,10 +31,7 @@ class ShargiaAppTest {
     @Test
     fun shargiaApp_NoRootDialogTest() {
         composeTestRule.setContent {
-            ShargiaApp(
-                viewModel = FakeViewViewModel,
-                screenState = ScreenState.NO_ROOT
-            )
+            ShargiaApp(screenState = ScreenState.NO_ROOT)
         }
         composeTestRule
             .onNodeWithContentDescription(R.string.root_not_found_dialog_content_description)
@@ -46,26 +41,10 @@ class ShargiaAppTest {
     @Test
     fun shariahApp_InitialisationFailedDialogTest() {
         composeTestRule.setContent {
-            ShargiaApp(
-                viewModel = FakeViewViewModel,
-                screenState = ScreenState.INITIALIZATION_FAILED
-            )
+            ShargiaApp(screenState = ScreenState.INITIALIZATION_FAILED)
         }
         composeTestRule
             .onNodeWithContentDescription(R.string.acc_init_failed_dialog_content_description)
-            .assertIsDisplayed()
-    }
-
-    @Test
-    fun shargiaApp_MainScreenTest() {
-        composeTestRule.setContent {
-            ShargiaApp(
-                viewModel = FakeViewViewModel,
-                screenState = ScreenState.MAIN_SCREEN
-            )
-        }
-        composeTestRule
-            .onNodeWithText(getStringById(R.string.app_name))
             .assertIsDisplayed()
     }
 }

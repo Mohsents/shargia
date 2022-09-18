@@ -22,8 +22,12 @@
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/44e17ad63afbbab80a43f15cc1a2a739/transformed/loader-1.0.0/res" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/e7d98abe5cdbbfa9457ef2cffe5a83b3/transformed/loader-1.0.0/res" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/3a14ec5bc044d2eb659b041010f66294/transformed/loader-1.0.0/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/3a14ec5bc044d2eb659b041010f66294/transformed/loader-1.0.0/AndroidManifest.xml" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/3a14ec5bc044d2eb659b041010f66294/transformed/loader-1.0.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/eab72f8ea389f8bb1cf71a5caed79b81/transformed/loader-1.0.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/8c4f9792aed1ee598912d8d29a3a5f1f/transformed/loader-1.0.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/a1cc211423b6aed1a185422c00216203/transformed/loader-1.0.0/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/1ac5439e1581273e47e73d0513a8005a/transformed/loader-1.0.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/1ac5439e1581273e47e73d0513a8005a/transformed/loader-1.0.0/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/1ac5439e1581273e47e73d0513a8005a/transformed/loader-1.0.0/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

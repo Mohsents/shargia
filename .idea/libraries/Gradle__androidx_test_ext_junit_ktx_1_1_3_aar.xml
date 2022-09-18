@@ -22,9 +22,13 @@
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/65eb717368438a3695e25bc9d450b9c5/transformed/junit-ktx-1.1.3/res" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/09888fe2fe69edc32c59e8de5fca9b2f/transformed/junit-ktx-1.1.3/res" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/00387373edf32f4c30ff715b4277e98a/transformed/junit-ktx-1.1.3/res" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/31e83e670675bc96abcbca3f5bfc2fc9/transformed/junit-ktx-1.1.3/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/31e83e670675bc96abcbca3f5bfc2fc9/transformed/junit-ktx-1.1.3/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/31e83e670675bc96abcbca3f5bfc2fc9/transformed/junit-ktx-1.1.3/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/74b540df0e27607314b46e24f60acb55/transformed/junit-ktx-1.1.3/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/5c39769c62a5deb4aa3fbb8c42b05780/transformed/junit-ktx-1.1.3/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/f36d47f3964b7f95e838522a7329623b/transformed/junit-ktx-1.1.3/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/85e5d1cfcbd8ba1ef53d9e241e1726d9/transformed/junit-ktx-1.1.3/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/85e5d1cfcbd8ba1ef53d9e241e1726d9/transformed/junit-ktx-1.1.3/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/85e5d1cfcbd8ba1ef53d9e241e1726d9/transformed/junit-ktx-1.1.3/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

@@ -4,8 +4,12 @@
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/06f4108b040a3c281e60d7b942da536c/transformed/hilt-android-testing-2.42/res" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/bb901b69d72ffed8eeb30c6f2394494a/transformed/hilt-android-testing-2.42/res" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/6b980bf404147672da09f91efd096fed/transformed/hilt-android-testing-2.42/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/6b980bf404147672da09f91efd096fed/transformed/hilt-android-testing-2.42/AndroidManifest.xml" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/6b980bf404147672da09f91efd096fed/transformed/hilt-android-testing-2.42/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/1e004861bbb23c2820e3b59a0da4cd88/transformed/hilt-android-testing-2.42/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/230c0faf011f37ef863f5750e8003b11/transformed/hilt-android-testing-2.42/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/b33b540504de4687ff44aea982c16094/transformed/hilt-android-testing-2.42/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/45561fc6ff743c58914edaa87fbb542d/transformed/hilt-android-testing-2.42/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/45561fc6ff743c58914edaa87fbb542d/transformed/hilt-android-testing-2.42/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/45561fc6ff743c58914edaa87fbb542d/transformed/hilt-android-testing-2.42/res" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.dagger/hilt-android-testing/2.42/cd42c24a82189988e4a4f964b8ac15eef9e2657e/hilt-android-testing-2.42-javadoc.jar!/" />

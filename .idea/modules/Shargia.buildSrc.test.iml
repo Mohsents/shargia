@@ -302,4 +302,5 @@
       </library>
     </orderEntry>
   </component>
+  <component name="TestModuleProperties" production-module="Shargia.buildSrc.main" />
 </module>
