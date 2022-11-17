@@ -26,9 +26,11 @@
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/16ecd1a852a3ed5c0e9c007380e6da47/transformed/annotation-experimental-1.0.0/res" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/3cda987d6cdd7fbe7f35a59ee88935c4/transformed/annotation-experimental-1.0.0/res" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/8a9d8cb72ee3630a696629e9d4e279b7/transformed/annotation-experimental-1.0.0/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/7b8dc8ca34cca30cb9cdc0faba101c87/transformed/annotation-experimental-1.0.0/AndroidManifest.xml" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/7b8dc8ca34cca30cb9cdc0faba101c87/transformed/annotation-experimental-1.0.0/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/7b8dc8ca34cca30cb9cdc0faba101c87/transformed/annotation-experimental-1.0.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/a5d63630dba9250771537614c09e8d1e/transformed/annotation-experimental-1.0.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/f90cfc7c0e01cf693fc3d73bbd2ef7b9/transformed/annotation-experimental-1.0.0/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/5537b0873bb23ab44f72edb450e50112/transformed/annotation-experimental-1.0.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/5537b0873bb23ab44f72edb450e50112/transformed/annotation-experimental-1.0.0/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

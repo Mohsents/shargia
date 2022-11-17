@@ -36,18 +36,20 @@ object Dependencies {
             "org.jetbrains.kotlinx:kotlinx-coroutines-test:${Versions.COROUTINE}"
         const val DATASTORE = "androidx.datastore:datastore-preferences:${Versions.DATASTORE}"
         const val TIMBER = "com.jakewharton.timber:timber:${Versions.TIMBER}"
-        const val COMPOSE_UI = "androidx.compose.ui:ui:${Versions.COMPOSE}"
         const val ANNOTATION = "androidx.annotation:annotation:${Versions.ANNOTATION}"
         const val CORE_KTX = "androidx.core:core-ktx:${Versions.CORE}"
         const val APP_COMPAT = "androidx.appcompat:appcompat:${Versions.APP_COMPAT}"
         const val LIFECYCLE = "androidx.lifecycle:lifecycle-runtime-ktx:${Versions.ARCH}"
         const val VIEW_MODEL = "androidx.lifecycle:lifecycle-viewmodel-ktx:${Versions.ARCH}"
-        const val COMPOSE_VIEW_MODEL = "androidx.lifecycle:lifecycle-viewmodel-compose:${Versions.LIFECYCLE}"
+        // No need to specify version when declare compose bom.
+        const val COMPOSE_BOM = "androidx.compose:compose-bom:${Versions.COMPOSE_BOM}"
+        const val COMPOSE_UI = "androidx.compose.ui:ui"
+        const val COMPOSE_VIEW_MODEL = "androidx.lifecycle:lifecycle-viewmodel-compose:${Versions.COMPOSE_VIEW_MODEL}"
         const val COMPOSE_TOOLING_PREVIEW =
-            "androidx.compose.ui:ui-tooling-preview:${Versions.COMPOSE}"
-        const val COMPOSE_FOUNDATION = "androidx.compose.foundation:foundation:${Versions.COMPOSE}"
+            "androidx.compose.ui:ui-tooling-preview"
+        const val COMPOSE_FOUNDATION = "androidx.compose.foundation:foundation"
         const val COMPOSE_MATERIAL3 =
-            "androidx.compose.material3:material3:${Versions.COMPOSE_MATERIAL3}"
+            "androidx.compose.material3:material3"
         const val COMPOSE_CONSTRAINT_LAYOUT =
             "androidx.constraintlayout:constraintlayout-compose:${Versions.COMPOSE_CONSTRAINT_LAYOUT}"
         const val COMPOSE_ACTIVITY =
@@ -72,8 +74,8 @@ object Dependencies {
         const val ANDROIDX_JUNIT = "androidx.test.ext:junit-ktx:${Versions.ANDROIDX_JUNIT}"
         const val ANDROIDX_TEST_RUNNER = "androidx.test:runner:${Versions.ANDROIDX_TEST}"
         const val ANDROIDX_RULES = "androidx.test:rules:${Versions.ANDROIDX_TEST}"
-        const val COMPOSE_UI_TEST = "androidx.compose.ui:ui-test-junit4:${Versions.COMPOSE}"
-        const val COMPOSE_UI_TEST_MANIFEST = "androidx.compose.ui:ui-test-manifest:${Versions.COMPOSE}"
-        const val COMPOSE_UI_TOOLING = "androidx.compose.ui:ui-tooling:${Versions.COMPOSE}"
+        const val COMPOSE_UI_TEST = "androidx.compose.ui:ui-test-junit4"
+        const val COMPOSE_UI_TEST_MANIFEST = "androidx.compose.ui:ui-test-manifest"
+        const val COMPOSE_UI_TOOLING = "androidx.compose.ui:ui-tooling"
     }
 }

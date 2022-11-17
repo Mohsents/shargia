@@ -51,7 +51,7 @@ android {
 
     buildFeatures { compose = true }
 
-    composeOptions { kotlinCompilerExtensionVersion = "1.3.1" }
+    composeOptions { kotlinCompilerExtensionVersion = "1.3.2" }
 
     packagingOptions {
         resources.excludes.apply {
@@ -68,6 +68,8 @@ tasks.withType<KotlinCompile>().configureEach {
 dependencies {
     implementation(project(":shell"))
     implementation(project(":acc"))
+    val composeBom = platform(Dependencies.Libs.COMPOSE_BOM)
+    implementation(composeBom)
     implementation(Dependencies.Libs.APP_COMPAT)
     implementation(Dependencies.Libs.MATERIAL)
     implementation(Dependencies.Libs.CORE_KTX)
@@ -84,7 +86,8 @@ dependencies {
     kapt(Dependencies.Libs.HILT_COMPILER)
     api(Dependencies.Libs.COMPOSE_ACTIVITY)
     kapt(Dependencies.Libs.HILT_ANDROID_COMPILER)
-    debugImplementation(Dependencies.Libs.COMPOSE_UI_TOOLING)
+    androidTestImplementation(composeBom)
+    debugImplementation(composeBom)
     androidTestImplementation(Dependencies.Libs.JUNIT)
     androidTestImplementation(Dependencies.Libs.COMPOSE_UI_TEST)
     debugImplementation(Dependencies.Libs.COMPOSE_UI_TEST_MANIFEST)
