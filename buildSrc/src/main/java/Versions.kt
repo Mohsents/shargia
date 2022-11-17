@@ -20,9 +20,9 @@
 internal object Versions {
 
     // Plugins
-    const val AGP = "7.2.0"
-    const val KOTLIN = "1.7.10"
-    const val GMS = "4.3.10"
+    const val AGP = "7.3.1"
+    const val KOTLIN = "1.7.20"
+    const val GMS = "4.3.14"
     const val FIREBASE_CRASHLYTICS = "2.8.1"
 
     // Libs
@@ -35,9 +35,10 @@ internal object Versions {
     const val COMPOSE_MATERIAL3 = "1.0.0-beta02"
     const val ANNOTATION = "1.3.0"
     const val CORE = "1.7.0"
-    const val COMPOSE = "1.2.1"
-    const val COMPOSE_ACTIVITY = "1.4.0"
-    const val COMPOSE_CONSTRAINT_LAYOUT = "1.0.0"
+    const val COMPOSE_BOM = "2022.11.00"
+    const val COMPOSE_ACTIVITY = "1.5.1"
+    const val COMPOSE_VIEW_MODEL = "2.5.1"
+    const val COMPOSE_CONSTRAINT_LAYOUT = "1.0.1"
     const val ARCH = "2.5.1"
     const val LIFECYCLE = "2.5.1"
     const val CUSTOM_VIEW = "1.2.0-alpha01"

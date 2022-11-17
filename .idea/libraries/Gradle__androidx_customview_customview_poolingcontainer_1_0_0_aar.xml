@@ -1,9 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: androidx.customview:customview-poolingcontainer:1.0.0@aar">
     <CLASSES>
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/0e1520c7a5eee3702f238f59ba21bbeb/transformed/customview-poolingcontainer-1.0.0/res" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/0e1520c7a5eee3702f238f59ba21bbeb/transformed/customview-poolingcontainer-1.0.0/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/0e1520c7a5eee3702f238f59ba21bbeb/transformed/customview-poolingcontainer-1.0.0/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/64e367ef7b30db2bdf8a3774f31711cd/transformed/customview-poolingcontainer-1.0.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/64e367ef7b30db2bdf8a3774f31711cd/transformed/customview-poolingcontainer-1.0.0/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/64e367ef7b30db2bdf8a3774f31711cd/transformed/customview-poolingcontainer-1.0.0/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
