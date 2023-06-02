@@ -1,13 +1,13 @@
 <component name="libraryTable">
   <library name="Gradle: androidx.compose.foundation:foundation-layout:1.3.1@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/12d1547830fd943701be7c4a5ec4fadc/transformed/foundation-layout-1.3.1/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/12d1547830fd943701be7c4a5ec4fadc/transformed/foundation-layout-1.3.1/AndroidManifest.xml" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/12d1547830fd943701be7c4a5ec4fadc/transformed/foundation-layout-1.3.1/res" />
+      <root url="file://$PROJECT_DIR$/../../Apps/Gradle 7.4.1 All/gradle-7.4.1/caches/transforms-3/19a7daa432c238aca7e285fbd2167549/transformed/foundation-layout-1.3.1/res" />
+      <root url="jar://$PROJECT_DIR$/../../Apps/Gradle 7.4.1 All/gradle-7.4.1/caches/transforms-3/19a7daa432c238aca7e285fbd2167549/transformed/foundation-layout-1.3.1/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../../Apps/Gradle 7.4.1 All/gradle-7.4.1/caches/transforms-3/19a7daa432c238aca7e285fbd2167549/transformed/foundation-layout-1.3.1/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.compose.foundation/foundation-layout/1.3.1/10ac7365d7d1411dc0fc4e131f8d9858c19b7690/foundation-layout-1.3.1-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../Apps/Gradle 7.4.1 All/gradle-7.4.1/caches/modules-2/files-2.1/androidx.compose.foundation/foundation-layout/1.3.1/10ac7365d7d1411dc0fc4e131f8d9858c19b7690/foundation-layout-1.3.1-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

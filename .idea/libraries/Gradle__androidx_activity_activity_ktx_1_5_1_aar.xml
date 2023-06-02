@@ -1,13 +1,13 @@
 <component name="libraryTable">
   <library name="Gradle: androidx.activity:activity-ktx:1.5.1@aar">
     <CLASSES>
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/8481385d6f8ca41d72cbbf9d49d6e78d/transformed/activity-ktx-1.5.1/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/8481385d6f8ca41d72cbbf9d49d6e78d/transformed/activity-ktx-1.5.1/AndroidManifest.xml" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/8481385d6f8ca41d72cbbf9d49d6e78d/transformed/activity-ktx-1.5.1/jars/classes.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../Apps/Gradle 7.4.1 All/gradle-7.4.1/caches/transforms-3/63fe7c3970a44ea7a9c9e9e8cbd63a35/transformed/activity-ktx-1.5.1/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../../Apps/Gradle 7.4.1 All/gradle-7.4.1/caches/transforms-3/63fe7c3970a44ea7a9c9e9e8cbd63a35/transformed/activity-ktx-1.5.1/res" />
+      <root url="file://$PROJECT_DIR$/../../Apps/Gradle 7.4.1 All/gradle-7.4.1/caches/transforms-3/63fe7c3970a44ea7a9c9e9e8cbd63a35/transformed/activity-ktx-1.5.1/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.activity/activity-ktx/1.5.1/919ce22f7ced37bb707da496c1852fa8a30b6571/activity-ktx-1.5.1-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../Apps/Gradle 7.4.1 All/gradle-7.4.1/caches/modules-2/files-2.1/androidx.activity/activity-ktx/1.5.1/919ce22f7ced37bb707da496c1852fa8a30b6571/activity-ktx-1.5.1-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

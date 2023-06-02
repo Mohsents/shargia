@@ -1,13 +1,13 @@
 <component name="libraryTable">
   <library name="Gradle: androidx.compose.ui:ui-unit:1.0.1@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/4db3371a91d5a46c9575fec16e3c1f78/transformed/ui-unit-1.0.1/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/4db3371a91d5a46c9575fec16e3c1f78/transformed/ui-unit-1.0.1/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/4db3371a91d5a46c9575fec16e3c1f78/transformed/ui-unit-1.0.1/AndroidManifest.xml" />
+      <root url="jar://$PROJECT_DIR$/../../Apps/Gradle 7.4.1 All/gradle-7.4.1/caches/transforms-3/12fba06e10e1c6054e8e43d33a1c897e/transformed/ui-unit-1.0.1/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../../Apps/Gradle 7.4.1 All/gradle-7.4.1/caches/transforms-3/12fba06e10e1c6054e8e43d33a1c897e/transformed/ui-unit-1.0.1/res" />
+      <root url="file://$PROJECT_DIR$/../../Apps/Gradle 7.4.1 All/gradle-7.4.1/caches/transforms-3/12fba06e10e1c6054e8e43d33a1c897e/transformed/ui-unit-1.0.1/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.compose.ui/ui-unit/1.0.1/822426fd329ea50c34bf679854660862568c457d/ui-unit-1.0.1-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../Apps/Gradle 7.4.1 All/gradle-7.4.1/caches/modules-2/files-2.1/androidx.compose.ui/ui-unit/1.0.1/822426fd329ea50c34bf679854660862568c457d/ui-unit-1.0.1-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

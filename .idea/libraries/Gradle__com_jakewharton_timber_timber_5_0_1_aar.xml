@@ -1,42 +1,14 @@
 <component name="libraryTable">
   <library name="Gradle: com.jakewharton.timber:timber:5.0.1@aar">
     <CLASSES>
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/65b8822cd87c90c81ce50f2c7bdd08a7/transformed/jetified-timber-5.0.1/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/693466c20992ad58be26ce4a784d2587/transformed/jetified-timber-5.0.1/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/70dce1718fc1b60050e8273f0d01f0ea/transformed/jetified-timber-5.0.1/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/70530a3a9f1690a802a69d26d5b4f152/transformed/jetified-timber-5.0.1/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/a3e08da86b5a4a780c76d5b3a96b1f0c/transformed/jetified-timber-5.0.1/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/79e95f1a9d0a4f735e5cd2783f61e6de/transformed/jetified-timber-5.0.1/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/2a7b92b3485278e2e21bb0f6657c9667/transformed/jetified-timber-5.0.1/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/209cd5810a51c45c0a77afb9ff686986/transformed/jetified-timber-5.0.1/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/7ae604a0d4486976bea432bba55ae533/transformed/jetified-timber-5.0.1/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/ee948bb31affac9f425e563c79fb4602/transformed/jetified-timber-5.0.1/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/e83460d082895ad242c57b076e23589a/transformed/jetified-timber-5.0.1/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/ab41390b75572a5439fc24192d144880/transformed/jetified-timber-5.0.1/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/1f25fb896cd9dd5b81984ebb8db5fc1d/transformed/jetified-timber-5.0.1/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/6496ec96e29b521525d099d1cb90c861/transformed/jetified-timber-5.0.1/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/d8b5c8553a436a139bf98ec534784e94/transformed/jetified-timber-5.0.1/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/c42c554442474b281ac5204696194c9e/transformed/timber-5.0.1/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/d86b969aabae16cd07f9a34dffa7c3c6/transformed/timber-5.0.1/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/fc03df31998320ac65197224ab382493/transformed/timber-5.0.1/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/b8d677011bfc8017bfa1694bf73066e8/transformed/timber-5.0.1/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/02ab9854e046a7a3161228c9733fdabb/transformed/timber-5.0.1/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/1156c4fed4065791e21ee7e6f6c970f5/transformed/timber-5.0.1/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/782f5cea0dd81f070ee56160dac303c4/transformed/timber-5.0.1/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/8282757a2c5ea7bb4e621966ea9b29c3/transformed/timber-5.0.1/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/434e0718a10393d098adf640164b6fd6/transformed/timber-5.0.1/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/ff6c6f5178dd54cfa9fe51b1891834c9/transformed/timber-5.0.1/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/f6ccd9119b57d0bb4eda0191ea035499/transformed/timber-5.0.1/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/08072ef09b91136290fdb0ca59fa97b8/transformed/timber-5.0.1/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/e284ee2c55588bb3fead109e426a9da4/transformed/timber-5.0.1/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/6e7f95de62af078cb58247ecc2f00ad9/transformed/timber-5.0.1/AndroidManifest.xml" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/6e7f95de62af078cb58247ecc2f00ad9/transformed/timber-5.0.1/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../../Apps/Gradle 7.4.1 All/gradle-7.4.1/caches/transforms-3/6d711ad4d5a3d5512d85fa162ba199db/transformed/timber-5.0.1/AndroidManifest.xml" />
+      <root url="jar://$PROJECT_DIR$/../../Apps/Gradle 7.4.1 All/gradle-7.4.1/caches/transforms-3/6d711ad4d5a3d5512d85fa162ba199db/transformed/timber-5.0.1/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC>
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.jakewharton.timber/timber/5.0.1/264c7cc6aa44f3b596075cbb19b2712f364d4c7e/timber-5.0.1-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../Apps/Gradle 7.4.1 All/gradle-7.4.1/caches/modules-2/files-2.1/com.jakewharton.timber/timber/5.0.1/264c7cc6aa44f3b596075cbb19b2712f364d4c7e/timber-5.0.1-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES>
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.jakewharton.timber/timber/5.0.1/836490fe0746598a87d74a9d715c61c1a2094623/timber-5.0.1-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../Apps/Gradle 7.4.1 All/gradle-7.4.1/caches/modules-2/files-2.1/com.jakewharton.timber/timber/5.0.1/836490fe0746598a87d74a9d715c61c1a2094623/timber-5.0.1-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

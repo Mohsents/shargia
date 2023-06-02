@@ -1,13 +1,13 @@
 <component name="libraryTable">
   <library name="Gradle: androidx.work:work-runtime:2.3.4@aar">
     <CLASSES>
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/a2dfd2b43ed028a711c3d3c75080eebb/transformed/work-runtime-2.3.4/res" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/a2dfd2b43ed028a711c3d3c75080eebb/transformed/work-runtime-2.3.4/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/a2dfd2b43ed028a711c3d3c75080eebb/transformed/work-runtime-2.3.4/AndroidManifest.xml" />
+      <root url="file://$PROJECT_DIR$/../../Apps/Gradle 7.4.1 All/gradle-7.4.1/caches/transforms-3/30aaa5e5e600a01788223a489ba19fa6/transformed/work-runtime-2.3.4/AndroidManifest.xml" />
+      <root url="file://$PROJECT_DIR$/../../Apps/Gradle 7.4.1 All/gradle-7.4.1/caches/transforms-3/30aaa5e5e600a01788223a489ba19fa6/transformed/work-runtime-2.3.4/res" />
+      <root url="jar://$PROJECT_DIR$/../../Apps/Gradle 7.4.1 All/gradle-7.4.1/caches/transforms-3/30aaa5e5e600a01788223a489ba19fa6/transformed/work-runtime-2.3.4/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.work/work-runtime/2.3.4/a79269c86b95e880215c498bf34e60ea5d8418d/work-runtime-2.3.4-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../Apps/Gradle 7.4.1 All/gradle-7.4.1/caches/modules-2/files-2.1/androidx.work/work-runtime/2.3.4/a79269c86b95e880215c498bf34e60ea5d8418d/work-runtime-2.3.4-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

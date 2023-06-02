@@ -1,13 +1,13 @@
 <component name="libraryTable">
   <library name="Gradle: androidx.datastore:datastore:1.0.0@aar">
     <CLASSES>
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/3364e4dbebba0cfc775bb0e16ef5586c/transformed/datastore-1.0.0/AndroidManifest.xml" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/3364e4dbebba0cfc775bb0e16ef5586c/transformed/datastore-1.0.0/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/3364e4dbebba0cfc775bb0e16ef5586c/transformed/datastore-1.0.0/res" />
+      <root url="jar://$PROJECT_DIR$/../../Apps/Gradle 7.4.1 All/gradle-7.4.1/caches/transforms-3/fca66cd132079ef765e8e92cb1a186a1/transformed/datastore-1.0.0/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../../Apps/Gradle 7.4.1 All/gradle-7.4.1/caches/transforms-3/fca66cd132079ef765e8e92cb1a186a1/transformed/datastore-1.0.0/AndroidManifest.xml" />
+      <root url="file://$PROJECT_DIR$/../../Apps/Gradle 7.4.1 All/gradle-7.4.1/caches/transforms-3/fca66cd132079ef765e8e92cb1a186a1/transformed/datastore-1.0.0/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.datastore/datastore/1.0.0/b00f14f5978f6ec5072348e9f4c8f47f1bf9131a/datastore-1.0.0-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../Apps/Gradle 7.4.1 All/gradle-7.4.1/caches/modules-2/files-2.1/androidx.datastore/datastore/1.0.0/b00f14f5978f6ec5072348e9f4c8f47f1bf9131a/datastore-1.0.0-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

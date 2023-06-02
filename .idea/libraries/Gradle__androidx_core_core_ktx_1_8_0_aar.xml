@@ -1,13 +1,13 @@
 <component name="libraryTable">
   <library name="Gradle: androidx.core:core-ktx:1.8.0@aar">
     <CLASSES>
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/97c1339548bcde9380cfdbd3317a2a6c/transformed/core-ktx-1.8.0/AndroidManifest.xml" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/97c1339548bcde9380cfdbd3317a2a6c/transformed/core-ktx-1.8.0/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/97c1339548bcde9380cfdbd3317a2a6c/transformed/core-ktx-1.8.0/res" />
+      <root url="file://$PROJECT_DIR$/../../Apps/Gradle 7.4.1 All/gradle-7.4.1/caches/transforms-3/9c31e81dc97c4d30d96f382fc6e58bee/transformed/core-ktx-1.8.0/AndroidManifest.xml" />
+      <root url="jar://$PROJECT_DIR$/../../Apps/Gradle 7.4.1 All/gradle-7.4.1/caches/transforms-3/9c31e81dc97c4d30d96f382fc6e58bee/transformed/core-ktx-1.8.0/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../../Apps/Gradle 7.4.1 All/gradle-7.4.1/caches/transforms-3/9c31e81dc97c4d30d96f382fc6e58bee/transformed/core-ktx-1.8.0/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.core/core-ktx/1.8.0/3850f60ae5c85d51335279f163e90163587e2bef/core-ktx-1.8.0-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../Apps/Gradle 7.4.1 All/gradle-7.4.1/caches/modules-2/files-2.1/androidx.core/core-ktx/1.8.0/3850f60ae5c85d51335279f163e90163587e2bef/core-ktx-1.8.0-sources.jar!/" />
     </SOURCES>
   </library>
 </component>
