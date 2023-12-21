@@ -10,13 +10,16 @@ Shargia helps you to control device charging and monitor battery status.
 - Setting Start/Stop charging in custom range
 - Apply custom voltage and ampere
 
+**Screenshots**
+
+![](/Screenshots/1.png)
+![](/Screenshots/2.png)
+![](/Screenshots/3.png)
+![](/Screenshots/4.png)
+
 ## Disclaimer
 **Note that this app may break your device.** To prolong battery life, limit charging power to 2W and keep your device away from heat. 
 It\'s recommended to start charging at 25% and stop it at 85% for best longevity.
-
-## Contact to developer
-- [Telegram](https://telegram.me/mohsents)
-- [Linkedin](https://linkedin.com/in/mohsen-teymouri-524166198)
 
 ## License
     Copyright 2022 Mohsents
